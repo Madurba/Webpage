@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr -->
+<html class="loaded" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./mercredi_files/nr-1167.min.js.téléchargement"></script><script src="./mercredi_files/ccedc1a9b6b946929d14dce625b51c035665d4ea12e846308ede0db968e93f42" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./mercredi_files/mixpanel-2-latest.min.js.téléchargement"></script><script async="" src="./mercredi_files/fbevents.js.téléchargement"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ea4c9be856","applicationID":"130952841","transactionName":"IFYPQUNbWApXFE1WBRBRA1pQRlBJVgcbQUsQUQ5C","queueTime":8,"applicationTime":965,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"ea4c9be856",applicationID:"130952841"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="D7UYi3FMwInZ2ieEpbyB4YU0SaO9M/M5uZE3mgWj+G7myCOnHgBaz+GS8RBbJ3SZ6MyI/tx8Me6PXQmv9Irnpw==">
+    <title>Le tableau de bord | The Hacking Project</title>
+<meta name="description" content="Soyez ensemble pour changer le monde">
+<meta name="site_name" content="site">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.thehackingproject.org/assets/favicon/apple-touch-icon-c01aaccf467f7cc3d79bbce743d60779f5b833fdc4500cebd07a5e11a07a5c31.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.thehackingproject.org/assets/favicon/apple-touch-icon-120x120-precomposed-372de868f08319961b72ba7e3b1ed7121e75e29c8294334cb2c911409ea18131.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.thehackingproject.org/assets/favicon/apple-touch-icon-120x120-372de868f08319961b72ba7e3b1ed7121e75e29c8294334cb2c911409ea18131.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.thehackingproject.org/assets/favicon/favicon-32x32-804b12d1c41c60fe721477b7c3b0a32811dc610580dd40ac92f1cc04cbd05ca4.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.thehackingproject.org/assets/favicon/favicon-16x16-d96ba65e5785d32474df9ebc6fbfd5442c751d527b10981a474bc3b7a4079d01.png">
+<link rel="manifest" href="https://www.thehackingproject.org/assets/favicon/manifest-cf975201fd8ac78a1f1a203357573d50031f1cc33436d099743df6428b8a38a2.json">
+<link rel="mask-icon" href="https://www.thehackingproject.org/assets/favicon/safari-pinned-tab-8af1cfcf7525ccdccb490f9f5adad396653a4969b419e0a9a9d3a1088140a912.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://www.thehackingproject.org/assets/favicon/favicon-cbf10361dc90b277565960736d4897fddef5468bff6299811ea9498459d56d21.ico">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig-dab38db6040ef54ac56e91fdd77e3d7b06746a634e87b68c99b59b216cb8611a.xml">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="screen" href="./mercredi_files/vendor-128821137548f97dbd0ff4a221f50d92.css">
+    <link rel="stylesheet" media="screen" href="./mercredi_files/dashboard-78ce809f7737f615df0ac51437386498.css">
+    <link rel="stylesheet" media="screen" href="./mercredi_files/dashboard-bc01a66e9be764e6ca8f339ec484791ba4d356ca095c3186208df5aa6dd068d5.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./mercredi_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-105991867-1');
+  </script>
+<!-- End Google Analytics -->
+
+<!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '773401719499556');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=773401719499556&ev=PageView
+    &noscript=1"/>
+    </noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("3a34a32946b2ebf5b2063d502374f392");</script>
+<!-- end Mixpanel -->
+
+  <script>mixpanel.identify("17393");</script>
+
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:995310,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script><script async="" src="./mercredi_files/hotjar-995310.js.téléchargement"></script>
+
+<script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="ccedc1a9b6b946929d14dce625b51c035665d4ea12e846308ede0db968e93f42",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+
+
+    <script src="./mercredi_files/thp-9449c4fa31654fbca9486303833f76ce410e2b8f9fca01b1e3364167fac00444.js.téléchargement"></script>
+    <script src="./mercredi_files/manifest-d41c51acdb2106a1ba99.js.téléchargement"></script>
+    <script src="./mercredi_files/vendor-7cc5a7dd94b61775d543.js.téléchargement"></script>
+    <script src="./mercredi_files/dashboard-cac5bd4f860a3fe4ad5caf186ff8973503c97e1c61aa3ed1942015c4b9ccee25.js.téléchargement"></script>
+
+    <link href="./mercredi_files/css" rel="stylesheet">
+  </head>
+
+  <body class="vertical-layout vertical-menu 2-columns fixed-navbar menu-expanded" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-primary-blue" data-col="2-columns" data-thp-controller="days" data-thp-action="show" data-thp-layout="dashboard">
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light" style="padding:0;">
+  <div class="navbar-wrapper">
+    <div class="navbar-container content">
+      <div class="collapse navbar-collapse show" id="navbar-mobile">
+
+        <!-- Division Gauche -->
+        <ul class="nav navbar-nav mr-auto float-left">
+          <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#"><i class="ft-menu font-large-1"></i></a></li>
+          <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#"><i class="ft-menu"></i></a></li>
+        </ul>
+        <!-- Fin division Gauche -->
+
+        <!-- Division droite -->
+        <ul class="nav navbar-nav float-right">
+
+         <li class="dropdown dropdown-user nav-item">
+          <a class="dropdown-toggle nav-link dropdown-user-link" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#" data-toggle="dropdown">
+              <span class="avatar avatar-online">
+                
+<img alt="avatar" style="max-height: 40px!important; width: auto" class="rounded-circle img-border" src="./mercredi_files/default_profile-a3318a5e66467f9958f16a172f9d15d6.jpg">
+
+              </span>
+          </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="arrow_box_right">
+                <a class="dropdown-toggle nav-link dropdown-user-link" href="https://www.thehackingproject.org/dashboard/users/17393?locale=fr">
+                  <span class="avatar avatar-online pt-0">
+                    
+<img alt="avatar" style="max-height: 40px!important; width: auto" class="rounded-circle img-border" src="./mercredi_files/default_profile-a3318a5e66467f9958f16a172f9d15d6.jpg">
+
+                  </span>
+                  <span class="user-name text-bold-700 ml-1 text-dark"> Charlélie</span>
+</a>                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.thehackingproject.org/dashboard/users/17393/edit?locale=fr">
+                  <i class="ft-edit"></i>Éditer profil</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.thehackingproject.org/dashboard/users/17393/danger?locale=fr">
+                  <i class="ft-alert-triangle"></i>Zone à risques</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" rel="nofollow" data-method="delete" href="https://www.thehackingproject.org/users/sign_out?locale=fr">
+                   <i class="ft-power"></i> Déconnexion
+</a>              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- Fin division Droite-->
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+       <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true" data-img="/packs/packs/dashboard/images/background/02-5c429c538031754c55530f38b4635d03.jpg">
+  <div class="navbar-header">
+    <ul class="nav navbar-nav flex-row">
+      <li class="nav-item mr-auto">
+          <a class="navbar-brand" href="https://www.thehackingproject.org/fr">
+            <h3 class="brand-text">The Hacking Project</h3>
+</a>       </li>
+      <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
+    </ul>
+  </div>
+  <div class="main-menu-content">
+    <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+      <li class=" nav-item">
+        <a href="https://www.thehackingproject.org/dashboard?locale=fr">
+          <i class="ft-monitor"></i>
+          <span class="menu-title" data-i18n="">Aujourd'hui</span>
+</a>      </li>
+
+
+        <li class="nav-item has-sub">
+          <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+            <i class="fa ft-paperclip"></i>
+            <span class="menu-title" data-i18n="">Mes cours</span>
+</a>          <ul class="menu-content">
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/4/weeks?locale=fr">Semaine d'introduction</a>
+              </li>
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/weeks?locale=fr">Fullstack web</a>
+              </li>
+          </ul>
+        </li>
+
+      <li class="">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1?locale=fr">
+          <i class="fa fa-book"></i>
+          <span class="menu-title" data-i18n="">Agenda</span>
+</a>      </li>
+
+      <li class="nav-item has-sub">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+         <i class="fa fa-angle-down"></i>
+        <span class="menu-title" data-i18n="">Le cursus</span>
+</a>        <ul class="menu-content">
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/cursus_submissions_guidelines?locale=fr">Contribuer au cursus ?</a>
+          </li>
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/lessons?locale=fr">Les Ressources</a>
+          </li>
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/projects?locale=fr">Les Projets</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav-item has-sub">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+         <i class="fas fa-user-graduate"></i>
+        <span class="menu-title" data-i18n="">Ma session</span>
+</a>        <ul class="menu-content">
+
+
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/corrections?locale=fr">Mes corrections</a>
+          </li>
+        </ul>
+      </li>
+
+
+        <li class="nav-item has-sub">
+          <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+             <i class="fa ft-award"></i>
+            <span class="menu-title" data-i18n="">Missions</span>
+</a>          <ul class="menu-content">
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/explaination?locale=fr">Guide des missions</a>
+              </li>
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/assignments?locale=fr">Toutes les missions</a>
+              </li>
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/assignments/new?locale=fr">Proposer une mission</a>
+              </li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item has-sub">
+          <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+            <i class="fa ft-play"></i>
+          <span class="menu-title" data-i18n="">Projets Finaux</span>
+</a>          <ul class="menu-content">
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/courses/1/final_projects?locale=fr">Les Projets Finaux</a>
+            </li>
+          </ul>
+
+          <ul class="menu-content">
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/courses/1/final_project_rules?locale=fr">Tout savoir sur le projet final</a>
+            </li>
+          </ul>
+          <ul class="menu-content">
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/courses/1/final_projects/new?locale=fr">Proposer un projet final</a>
+            </li>
+          </ul>
+        </li>
+
+      <li class="nav-item has-sub">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+          <i class="fa ft-download"></i>
+          <span class="menu-title" data-i18n="">Documents</span>
+</a>        <ul class="menu-content">
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/quotations/new?locale=fr">Devis</a>
+          </li>
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/full_session_attestations/new.1?locale=fr">Mon Attestation d'inscription à la formation</a>
+            </li>
+        </ul>
+      </li>
+
+    <li class="nav-item has-sub">
+      <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+        <i class="fa ft-settings"></i>
+        <span class="menu-title" data-i18n="">Mon inscription</span>
+</a>      <ul class="menu-content">
+        <li>
+          <a href="https://www.thehackingproject.org/dashboard/subscriptions_cities/6761/edit?locale=fr">Éditer ville</a>
+        </li>
+      </ul>
+
+      <ul class="menu-content">
+        <li>
+          <a href="https://www.thehackingproject.org/dashboard/subscriptions_groups/6761/edit?locale=fr">Éditer préf. de groupe</a>
+        </li>
+      </ul>
+    </li>
+
+
+
+    <li class="nav-item has-sub">
+      <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#">
+        <i class="fa  fa-cogs"></i>
+        <span class="menu-title">Liens Pratiques</span>
+</a>      <ul class="menu-content">
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/modalites?locale=fr">Modalités</a>
+          </li>
+        <li>
+          <a href="https://www.thehackingproject.org/dashboard/sessions?locale=fr">S'inscrire à une session</a>
+        </li>
+        <li>
+          <a href="https://blog.thehackingproject.org/2019/01/03/le-guide-de-survie-du-moussaillon/" target="_blank">Le guide de survie</a>
+        </li>
+      </ul>
+    </li>
+
+
+    <br>
+
+    <li class="">
+      <a href="https://www.thehackingproject.org/dashboard/help?locale=fr">
+        <i class="fa ft-help-circle"></i>
+        <span class="menu-title" data-i18n="">Une question ?</span>
+</a>    </li>
+
+
+    </ul>
+  </div>
+  <div class="navigation-background" style="background-image: url(&quot;/packs/packs/dashboard/images/background/02-5c429c538031754c55530f38b4635d03.jpg&quot;);"></div>
+</div>
+
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row"></div>
+        <div class="content-body">
+
+  
+  <div class="row">
+    <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <i class="ft-calendar icon-opacity info font-large-4"></i>
+          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1"></span>
+            <h3 class="info mb-0">
+              Jour 7 /
+              55</h3>
+          </div>
+        </div>
+        <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+          <div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: 12%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="120">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <i class="ft-heart icon-opacity danger font-large-4"></i>
+          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1">Jokers restant</span>
+            <h3 class="danger mb-0">
+              3
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <i class="ft-award icon-opacity success font-large-4"></i>
+          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1">Mes coups de main</span>
+            <h3 class="success mb-0">
+              12
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/assignments?locale=fr">
+              <i class="ft-fast-forward icon-opacity warning font-large-4"></i>
+</a>          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1">Missions</span>
+              <div class="badge border-danger danger badge-border">Pas inscrit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h1>
+          Découverte de Ruby
+        </h1>
+      </div>
+      <div class="card-content">
+        <div class="card-body">
+          <div class="card-text">
+            <h2 class="text-center">
+              Bot Twitter
+            </h2>
+            <div class="cd-horizontal-timeline loaded">
+              <div class="timeline">
+                <div class="events-wrapper">
+                  <div class="events" style="width: 1800px;">
+                    <ol>
+                          <li>
+                            <a style="left:120px;" data-toggle="tooltip" data-placement="top" data-original-title="Découverte des tests" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr">
+                              Lun
+                                  <i class="fa fa-rocket text-danger" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Projet à rendre ce jour-là"></i>
+
+</a>                          </li>
+                          <li>
+                            <a style="left:240px;" data-toggle="tooltip" data-placement="top" data-original-title="Quelques exercices de chauffe en Ruby" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/2?locale=fr">
+                              Mar
+                                  <i class="fa fa-pencil text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Corrections cette journée là"></i>
+
+</a>                          </li>
+                          <li>
+                            <a class="selected" style="left:360px;" data-toggle="tooltip" data-placement="top" data-original-title="Bot Twitter" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr">
+                              Mer
+                              
+</a>                          </li>
+                          <li>
+                            <a style="left:480px;" data-toggle="tooltip" data-placement="top" data-original-title="L&#39;art du scrapping" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/4?locale=fr" aria-describedby="tooltip648328">
+                              Jeu
+                                  <i class="fa fa-rocket text-danger" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Projet à rendre ce jour-là"></i>
+
+</a>                          </li>
+                          <li>
+                            <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr#" style="left: 600px;" data-toggle="tooltip" data-placement="top" data-original-title="Automatisation, serialization">
+                            Ven
+                            <i class="fa fa-lock fa-margin" aria-hidden="true"></i>
+                                <i class="fa fa-pencil text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Corrections cette journée là"></i>
+
+                            </a>
+                          </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Les fameuses corrections qui n'arrivnet que les jours concernés -->
+
+    <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #5E66E5 ">
+          <h1>Cours : La gem PRY</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/lessons/15/lesson_submissions/new?locale=fr">
+                  <i class="ft-edit" data-toggle="tooltip" data-placement="top" data-original-title="Proposer une amélioration"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            <h2>1. Introduction</h2>
+<p>Nous allons te montrer <a href="https://github.com/pry/pry" target="_blank">PRY</a>, une gem extrêmement pratique qui permet de débugger du code très facilement. Nous allons aussi en profiter pour t’apprendre à bien débugger tes programmes car, comme pour tout, « il y a des bonnes pratiques pour ça ».</p>
+
+<h2>2. Historique</h2>
+<p>La gem PRY a été créée par John Mair. Le debugging a, lui, été inventé le jour où le premier programme a été exécuté.</p>
+
+<h2>3. La ressource</h2>
+
+<h3>3.1. Le principe de PRY</h3>
+<p>Tu te souviens du cours sur <a href="https://www.thehackingproject.org/dashboard/lessons/288?locale=fr">"Comment débugger efficacement son code"</a>&nbsp;? PRY aurait pu en faire partie car c'est un outil additionnel dans ton combat perpétuel contre les bugs. Cette gem va t'aider à diagnostiquer l’origine d’un bug en étant plus efficace que ma sacro-sainte méthode du "mets des <code>puts</code>". </p>
+
+<p>Ainsi, il y a des fois où tu n'as pas envie que ton programme se relance toutes les deux minutes pour le tester avec tes <code>puts</code> (exemple&nbsp;: un programme de scrapping qui met 4 minutes à s’exécuter de bout en bout et bugue vers la fin), ou bien tu es tellement paumé dans ton code que tu as besoin de vérifier toutes les variables, voire de tester à la main les méthodes dans ton programme. Eh bien avec PRY, tu peux lancer un REPL (tu sais, les programmes du genre IRB) en plein milieu de l'exécution de ton programme, juste avant qu'il plante. Ça va te permettre de tester tes variables, tes lignes de code, et ainsi trouver d'où vient ton erreur.</p>
+
+<p>Afin de comprendre ce que fait PRY, et avoir quelques bonnes pratiques sur le debugging, nous avons sélectionné <a href="https://www.youtube.com/watch?v=dPDrgpWakrA" target="_blank" class="text-primary">un petit tutoriel vidéo</a> qui explique en 12 minutes comment utiliser la gem PRY.</p>
+
+<h3>3.2. Utiliser la gem PRY</h3>
+<p>Pour utiliser, il faut d'abord ajouter PRY à ton Gemfile :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">gem <span class="token string">'pry'</span></code></pre>
+
+<p>Ensuite, tu auras besoin d'appeler PRY dans ton programme :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">require <span class="token string">'pry'</span>
+
+<span class="token comment"># le reste de ton programme…</span></code></pre>
+
+<p>Et voilà, tu auras juste à insérer <code>binding.pry</code> pour que le REPL s'exécute à cet endroit du code. C'est comme si IRB se lançait au milieu de l'exécution de ton code et que du coup, tu pouvais interagir avec les variables et méthodes dans leur état actuel (connaître leurs valeurs, faire des tests avec, modifier leurs valeurs, etc.). Par exemple, en exécutant le code suivant :</p>
+<pre class=" language-ruby"><code class=" language-ruby">require <span class="token string">'pry'</span>
+
+<span class="token keyword">def</span> multiply_by_6<span class="token punctuation">(</span>var<span class="token punctuation">)</span> <span class="token comment">#définition d'une méthode multipliant par 6 en 2 étapes
+</span>var <span class="token operator">=</span> var <span class="token operator">*</span> <span class="token number">2</span>
+binding<span class="token punctuation">.</span>pry <span class="token comment"># On lance PRY au milieu de la méthode
+</span>var <span class="token operator">=</span> var <span class="token operator">*</span> <span class="token number">3</span>
+<span class="token keyword">return</span> var
+<span class="token keyword">end</span>
+
+multiply_by_6<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment"># j'exécute la méthode sur la valeur 5</span></code></pre>
+
+<p>On lance le programme et PRY s'exécute sous la forme d'une fenêtre type IRB. Si on veut afficher la valeur de <code>var</code>, on obtient <code>=&gt; 10</code>, la valeur de (5 x 2).</p>
+
+<p>Pour sortir de l'interface de PRY, tape tout simplement <code>exit</code></p>
+
+<h2>4. Points importants à retenir</h2>
+<p>Pour débugger : 1) lis les messages 2) cherche sur Google 3) mets des puts / utilise PRY 4) appelle un ami.</p>
+<p>PRY permet de lancer une sorte d'IRB en plein milieu d'un programme Ruby. Cette interface permet de faire une pause dans l'exécution du programme et de tester la valeur de toutes les variables ou méthodes que l'on souhaite. C'est un outil extrêmement puissant pour débugger un programme et interagir avec.</p>
+
+<p>Pour utiliser PRY, il faut ajouter <code>gem 'pry'</code> dans son Gemfile, <code>require 'pry'</code> en haut de ton programme concerné, puis <code>binding.pry</code> pour exécuter PRY dans ton code.</p>
+
+<h2>5. Pour aller plus loin</h2>
+<p>Tu peux aller sur <a href="http://pryrepl.org/" target="_blank">le site de PRY</a>, ou tu peux aller jeter un œil sur la documentation de <a href="https://github.com/pry/pry" target="_blank" class="text-primary">PRY sur GitHub</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #5E66E5 ">
+          <h1>Cours : Dotenv</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/lessons/16/lesson_submissions/new?locale=fr">
+                  <i class="ft-edit" data-toggle="tooltip" data-placement="top" data-original-title="Proposer une amélioration"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            <h2>1. Introduction</h2>
+<p>Aujourd'hui, tu vas apprendre à manipuler des clés d'API. Les clés d'API sont en quelque sorte tes identifiants et mots de passe pour faire communiquer tes programmes avec un programme tiers (Twitter, Google Drive, Spotify, etc.). Le hic, c'est que si tu écris tes identifiants dans un programme que tu vas ensuite push sur GitHub (où il est public et donc lisible par tous), c'est le meilleur moyen de faire usurper ton identité sur les API. <br> Il existe d'ailleurs moult bots qui s'amusent à aller sur tout GitHub et récupérer les identifiants des développeurs maladroits. En les utilisant, ils peuvent alors profiter des services à ta place (surtout si ce sont des services payants) ou commettre des délits en ton nom. Sympa non&nbsp;? Bienvenue sur le net. 🏴‍☠️ </p>
+
+<p>Dans cette ressource, nous allons te montrer comment arriver à manipuler très facilement des clés d'API, tout en les gardant secrètes, grâce à la gem Dotenv&nbsp;!</p>
+
+
+<h2>2. Historique</h2>
+<p>Un moussaillon s'est retrouvé avec une facture Amazon de 16&nbsp;000€ pour avoir mis ses clefs d’API sur GitHub sans passer par Dotenv (Amazon Web Services exige souvent une carte bleue avant de te donner un accès). OK, c'est plutôt une anecdote mais j'avais pas d'historique à te proposer sur Dotenv 😇.</p>
+
+<h2>3. La ressource</h2>
+<p>Dotenv est une gem qui permet de stocker des clés d'API dans un joli fichier qui va rester secret, car il ne sera jamais push sur GitHub. Via la gem, ton programme pourra faire appel au contenu de ce fichier pour utiliser les clés.</p>
+
+<h3>3.1. Comment ça marche&nbsp;?</h3>
+
+<p>On va mettre toutes les clés d'API dans un fichier dont le nom <b>complet</b> est <code>.env</code>, puis on pourra les appeler en faisant <code>ENV["NOM_DE_LA_CLÉ"]</code> dans notre programme Ruby. Puis afin d'éviter de pousser le bousin sur GitHub, on va rajouter le fichier <code>.env</code> dans notre <code>.gitignore</code>.</p>
+
+<div class="card box-shadow-0 border-success">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">📚 INSTANT CULTURE GÉ</h4>
+      <p class="card-text">En programmation, il est courant de manipuler des fichiers dont le nom commence par <code>.</code>. Ainsi quand je parle du fichier <code>.env</code>, c'est son <code>nom complet</code> et pas un façon de dire "un fichier ayant l'extension .env".</p>
+      <p>Souvent, les fichiers commençant par <code>.</code> sont, par défaut, cachés. Si tu vas dans un dossier avec l'explorateur de fichier ou si tu fais la commande <code>ls</code> dans ton terminal, les fichiers commençant par <code>.</code> ne te seront pas affichés. Pour les visualiser, fait plutôt <code>ls -a</code>.</p>
+    </div>
+  </div>
+</div>
+
+<h3>3.2. Exemple avec un dossier Ruby simple</h3>
+<p>Crée un petit dossier de test <code>dotenv_test</code> avec l'architecture suivante :</p>
+<pre class=" language-shell"><code class=" language-shell">dotenv_test
+├── lib
+│   └── app.rb
+├── README.md
+├── Gemfile
+├── .env
+└── .gitignore</code></pre>
+
+<p>Puis ajoute la gem dans le Gemfile :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">gem <span class="token string">'dotenv'</span></code></pre>
+
+<p>Lance un petit <code>bundle install</code> qui va donc rajouter un fichier <code>Gemfile.lock</code> à ton arborescence et rendre la gem disponible dans tout le dossier.</p>
+
+<p>Maintenant, on va compléter le fichier <code>.env</code> pour lui faire stocker des clés d'API ou autres éléments secrets :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby"><span class="token const">TWITTER_API_KEY</span><span class="token operator">=</span><span class="token string">"my-twitter-api-key"</span>
+<span class="token const">TWITTER_API_SECRET</span><span class="token operator">=</span><span class="token string">"this_is_soooo_secret"</span>
+
+<span class="token const">BEST_WEBSITE_EVER</span><span class="token operator">=</span><span class="token string">"thehackingproject"</span></code></pre>
+
+<p>Dernière étape : accéder aux infos ultra-confidentielles de <code>.env</code> depuis <code>/lib/app.rb</code>. Pour cela, voici le contenu de <code>app.rb</code> :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">require <span class="token string">'dotenv'</span><span class="token comment"># Appelle la gem Dotenv
+</span>
+<span class="token const">Dotenv</span><span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'.env'</span><span class="token punctuation">)</span> <span class="token comment"># Ceci appelle le fichier .env (situé dans le même dossier que celui d'où tu exécute app.rb)
+</span><span class="token comment"># et grâce à la gem Dotenv, on importe toutes les données enregistrées dans un hash ENV
+</span>
+<span class="token comment"># Il est ensuite très facile d'appeler les données du hash ENV, par exemple là je vais afficher le contenu de la clé TWITTER_API_SECRET
+</span>puts <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">'TWITTER_API_SECRET'</span><span class="token punctuation">]</span>
+
+<span class="token comment">#Autre exemple 
+</span>puts <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">'BEST_WEBSITE_EVER'</span><span class="token punctuation">]</span></code></pre>
+
+<p>Grâce à tout cela, si tu vas dans ton dossier <code>dotenv_test</code> et que tu exécutes <code>$ ruby lib/app.rb</code>, tu devrais voir les 2 contenus secrets s'afficher. On a bien réussi à lire le fichier <code>.env</code> !</p>
+
+<div class="card box-shadow-0 border-info">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h4>
+      <p class="card-text">Si maintenant tu te places dans <code>dotenv_test/lib</code> et que tu exécutes <code>$ ruby app.rb</code>, tu devrais avoir une erreur : il nous trouve plus le fichier <code>.env</code>... Pourquoi ?</p>
+
+      <p>Tout est lié à la ligne <code>Dotenv.load('.env')</code> dans ton fichier <code>app.rb</code>. C'est cette ligne qui va dire au programme où se trouve <code>.env</code> et si tu écris juste <code>Dotenv.load('.env')</code>, en gros tu lui dis "il est dans le dossier courant". <b>Le dossier courant, c'est celui depuis lequel tu vas exécuter le programme</b>.</p>
+
+      <p>Du coup ça devient logique : si tu es (sur ton terminal) dans <code>dotenv_test</code> et que tu exécutes <code>$ ruby lib/app.rb</code>, il trouve <code>.env</code>. Par contre si tu es dans <code>dotenv_test/lib</code>, il va le chercher dans <code>/lib/</code> et ne le trouvera pas.</p>
+      <p>Pour les curieux, sachez qu'en faisant <code>Dotenv.load('../.env')</code>, on arrive à faire fonctionner la lecture de <code>.env</code> en étant dans <code>/lib</code>. Mais ne vous prenez pas trop la tête avec ces considérations pour le moment.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card box-shadow-0 border-danger">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+      <p class="card-text">Ouiiiin, Dotenv ça marche paaaas&nbsp;! 😭</p>
+      <p>Voici les principales coquilles que les moussaillons font et qui empêchent la gem de bien faire son boulot :</p>
+      <ul>
+        <li>Le fichier <code>.env</code> est mal nommé ou pas situé à la racine du dossier.</li>
+        <li>Dans le fichier <code>.env</code>, les clés d'API ne sont pas définies comme des strings. Il faut les déclarer ainsi : <code>Nom_de_la_clef = "contenu de la clé"</code>. Si vous oubliez les guillemets, ça foire.</li>
+        <li>Dans ton programme, la clé d’API n'est pas bien appelée. C'est un string à appeler sur le hash <code>ENV</code> pour en obtenir la valeur. Avec l'exemple précédent, je dois écrire <code>ENV['Nom_de_la_clef']</code> (encore une fois, n'oubliez pas les guillemets).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h3>3.3. On push maintenant sur Github</h3>
+<p>Dernière étape très importante : être capable de push sur Github ton code mais <b>pas tes clefs API super secrètes</b> !</p>
+
+<p>Pour cela, on va rajouter la ligne <code>.env</code> (oui, juste ces 4 caractères suffisent) dans le fichier <code>.gitignore</code> et le sauvegarder.</p>
+
+<p>Fait le test à présent en pushant ton dossier <code>dotenv_test</code> sur Github. Si jamais un fichier <code>.env</code> apparaît, c'est perdu : tes clefs d'API sont compromises (quelqu'un les a peut-être déjà lues). Recommence le process à zéro en cherchant ton erreur !</p>
+
+<p>Si tu veux partager tes clefs d'API, par exemple avec une autre personne de ton équipe, ça n'est donc pas via Github : il faudra les envoyer par e-mail ou par Slack.</p>
+
+<div class="card box-shadow-0 border-danger">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+      <p class="card-text">N'oublie pas cette étape d'ajout dans le <code>.gitignore</code>&nbsp;! Sinon tout ça n'aura servi à rien et tu vas push <code>.env</code> sur GitHub … Et les hackers te disent merci.</p>
+    </div>
+  </div>
+</div>
+
+<h2>4. Points importants à retenir</h2>
+<p>Pour utiliser Dotenv, ajoute <code>gem 'dotenv'</code> à ton Gemfile, puis créé un fichier <code>.env</code> qui contiendra tes clés d'API et qui sera dans ton <code>.gitignore</code>.</p>
+<p>Tu auras juste à <code>require 'dotenv'</code> et <code>Dotenv.load</code> pour avoir accès au contenu du fichier dans tes programmes Ruby.</p>
+<p>Une cheatsheet Dotenv est <a href="https://github.com/codeunion/dotenv-example" target="_blank">disponible ici</a>.</p>
+
+
+<h2>5. Pour aller plus loin</h2>
+<p>Tu peux <a href="https://github.com/bkeepers/dotenv" target="_blank">jeter un œil</a> sur le repo de la gem Dotenv.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #5E66E5 ">
+          <h1>Cours : Gem Twitter</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/lessons/79/lesson_submissions/new?locale=fr">
+                  <i class="ft-edit" data-toggle="tooltip" data-placement="top" data-original-title="Proposer une amélioration"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            
+<h2>1. Introduction</h2>
+<p>Bon, maintenant que tu sais compter jusqu'à 100 et que tu commences à bien comprendre les hash et les arrays, nous allons pouvoir faire des programmes plus funky que ceux qui comptent des mots ou font des pyramides sur terminal.</p>
+
+<p>Ainsi, dans cette ressource, nous allons voir comment communiquer avec l'API de Twitter pour que ce soit des programmes Ruby qui gazouillent à ta place. Prépare la table d'opération&nbsp;: tu vas bientôt donner vie à ton premier robot-Twitter personnel&nbsp;! 😎</p>
+
+<h2>2. Historique</h2>
+<p>Une <i>interface de programmation applicative</i> (Application Programming Interface, ou <b>API</b> en anglais) est un set de fonctions qui permet de communiquer avec un programme informatique. Par exemple, si l’interface web de Gmail permet d'envoyer un e-mail en cliquant sur le bouton "Envoyer", il est possible de faire la même chose en faisant un <code>email.send</code> via un programme Ruby connecté à l'API de Gmail (je caricature, mais c'est à peu près cela).</p>
+
+<p>Les APIs sont indispensables si l'on veut faire travailler des programmes à notre place et ainsi automatiser des tâches. Par exemple, tu crées une start-up qui propose un abonnement à une box de PQ, qui envoie tous les mois une sélection des meilleurs PQ, moyennant 10&nbsp;€ mensuels. Tu pourrais te connecter à <a href="https://dashboard.stripe.com/dashboard" target="_blank">ton compte Stripe</a>, puis cliquer tous les mois sur le bon bouton pour prélever de 10&nbsp;€ tes clients, et enfin envoyer ta super box si leur carte bleue passe. On a là une tâche sans valeur ajoutée, répétitive, que tu effectues sur un site web (autrement dit un programme informatique)&nbsp;: c'est typiquement le genre de chose qu'il faut automatiser par API. Laisse les bots bosser pour toi en faisant un <code>User.all.each { |u| u.pay(10) }</code>&nbsp;: ils adorent se parler entre eux.  🤖♥🤖 </p>
+
+<p>Pour cette ressource, nous allons te montrer comment te connecter à l'API de Twitter, et envoyer ton premier tweet.</p>
+
+
+<h2>3. La ressource</h2>
+<h3>3.1. Gem Twitter et API Twitter&nbsp;: quelle différence&nbsp;?</h3>
+<p>Twitter possède <a href="https://developer.twitter.com/en/docs.html" target="_blank">une API</a> très documentée via laquelle il est possible de faire plein d'actions (tweet, like, follow, search, etc.). En théorie, une API nécessite de coder des requêtes HTTP un peu complexes pour tout faire marcher&nbsp;: c'est potentiellement long et pas si simple pour un débutant. <br> Heureusement, pour la majorité des gros sites connus, tu pourras trouver des wrappers d'APIs en Ruby&nbsp;: ce sont, en gros, des gems qui ont transformé les requêtes HTTP en méthodes Ruby pour faciliter l'usage de l'API. Evidemment, <a href="https://github.com/sferik/twitter" target="_blank"> Twitter possède sa gem</a>.</p>
+
+<h3>3.2. Grandes lignes de fonctionnement</h3>
+<p>Ajoute donc la gem Twitter dans ton Gemfile, et te voici prêt à l'utiliser. À partir de là, ton programme va marcher avec les trois parties suivantes&nbsp;:</p>
+
+<ul>
+  <li>D'abord il va appeler la gem Twitter (ça tu commences à connaître avec <code>require</code>).</li>
+  <li>Puis il va se connecter à Twitter (tu montres patte-blanche avec tes clés d'API).</li>
+  <li>Enfin, une fois connecté tu pourras t’amuser avec Twitter en appelant tout un tas de fonctions.</li>
+</ul>
+
+<p>Et en langage code, ces trois parties vont donner :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby"> <span class="token comment"># ligne très importante qui appelle la gem.
+</span>require <span class="token string">'twitter'</span>
+
+<span class="token comment"># n'oublie pas les lignes pour Dotenv ici…
+</span>
+<span class="token comment"># quelques lignes qui appellent les clés d'API de ton fichier .env
+</span>client <span class="token operator">=</span> <span class="token const">Twitter</span><span class="token punctuation">:</span><span class="token symbol">:REST</span><span class="token punctuation">:</span><span class="token symbol">:Client</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token keyword">do</span> <span class="token operator">|</span>config<span class="token operator">|</span>
+  config<span class="token punctuation">.</span>consumer_key        <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_CONSUMER_KEY"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>consumer_secret     <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_CONSUMER_SECRET"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>access_token        <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_ACCESS_TOKEN"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>access_token_secret <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_ACCESS_TOKEN_SECRET"</span><span class="token punctuation">]</span>
+<span class="token keyword">end</span>
+
+<span class="token comment"># ligne qui permet de tweeter sur ton compte
+</span>client<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token string">'Mon premier tweet en Ruby !!!!'</span><span class="token punctuation">)</span></code></pre>
+<p>Nous allons maintenant voir chaque fonctionnalité de la gem en détail.</p>
+
+<h3>3.2. Étape d'authentification</h3>
+<p>En théorie, l'application que tu as soumise à Twitter (il y a quelques jours) doit être maintenant validée, et tu as accès à des clés d'API. Il y a en 4 :</p>
+
+<ul>
+  <li>Consumer Key</li>
+  <li>Consumer Secret</li>
+  <li>Access Token</li>
+  <li>Access Token Secret</li>
+</ul>
+
+<p>Maintenant que tu as ces clés, mets-les dans ton fichier <code>.env</code> sous les noms <code>TWITTER_CONSUMER_KEY</code>, <code>TWITTER_CONSUMER_SECRET</code>, <code>TWITTER_ACCESS_TOKEN</code> et <code>TWITTER_ACCESS_TOKEN_SECRET</code>.N'oublie évidemment pas d'ajouter ces deux lignes magiques en haut de ton programme&nbsp;:</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">require <span class="token string">'dotenv'</span>
+<span class="token const">Dotenv</span><span class="token punctuation">.</span>load</code></pre>
+
+
+
+<h3>3.3. Les fonctionnalités de base</h3>
+<p>Maintenant tu as tout bien branché, nous pouvons faire notre premier tweet avec&nbsp;:</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">client<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token string">'Mon premier tweet en Ruby !!!!'</span><span class="token punctuation">)</span></code></pre><br>
+<p>Tes followers vont halluciner 🤩</p>
+
+<p>Tweeter, c'est sympa. Mais tu peux faire d'autres choses avec la gem&nbsp;: tu peux follow un utilisateur, récupérer la liste de tweets d'un utilisateur, et bien d'autres. Regarde <a href="https://github.com/sferik/twitter#usage-examples" target="_blank">les exemples</a> de la gem Twitter.</p>
+
+<p>Tu peux aussi <a href="https://www.rubydoc.info/gems/twitter" target="_blank">regarder la doc officielle</a> de la gem Twitter. Les documentations des gems Ruby sous ce format peuvent paraître un peu barbares au début, mais on s'y fait très rapidement. À gauche, tu pourras trouver la liste des objets sur lesquels tu peux appliquer des méthodes. Par exemple, tu peux regarder <a href="https://www.rubydoc.info/gems/twitter/Twitter/User" target="_blank">la liste des méthodes liées aux utilisateurs</a>, et tu peux voir qu'il est possible d'avoir <a href="https://www.rubydoc.info/gems/twitter/Twitter/User" target="_blank">la localisation d'un utilisateur</a> en faisant <code>user.location</code>.</p>
+
+
+<h3>3.4. Et les tests dans tout cela&nbsp;?</h3>
+<p>On rentre dans une partie funky pour les tests&nbsp;: comment tester une gem&nbsp;? Déjà pour tester les programmes simples c'est pas facile, mais alors avec une gem c'est gloup. On va te montrer un exemple ou deux pour la forme, et l'on ne te demandera pas beaucoup plus pour le moment :)</p>
+
+<h4>3.4.1. Tester la connexion</h4>
+<p>Une connexion à Twitter se résume aux lignes suivantes :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">client <span class="token operator">=</span> <span class="token const">Twitter</span><span class="token punctuation">:</span><span class="token symbol">:REST</span><span class="token punctuation">:</span><span class="token symbol">:Client</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token keyword">do</span> <span class="token operator">|</span>config<span class="token operator">|</span>
+  config<span class="token punctuation">.</span>consumer_key        <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_CONSUMER_KEY"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>consumer_secret     <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_CONSUMER_SECRET"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>access_token        <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_ACCESS_TOKEN"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>access_token_secret <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_ACCESS_TOKEN_SECRET"</span><span class="token punctuation">]</span>
+<span class="token keyword">end</span></code></pre>
+
+<p>En gros, si ta connexion marche, c'est que la variable <code>client</code> ne sera pas égale à <code>nil</code>. Par exemple, si ta connexion marche, la ligne <code>puts client</code> devrait te ressortir un truc du genre <code>Twitter Object truc</code> et <code>nil</code> si cela ne marche pas.</p>
+
+<p>Pour tester ces lignes (qui seront bien entendu imbriquées dans une méthode <code>login_twitter</code> qui devra <code>return client</code>), nous allons faire :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">describe <span class="token string">"the login_twitter method"</span> <span class="token keyword">do</span>
+  it <span class="token string">"should return client, and client is not nil"</span> <span class="token keyword">do</span>
+    expect<span class="token punctuation">(</span>login_twitter<span class="token punctuation">)</span><span class="token punctuation">.</span>not_to be_nil
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span></code></pre>
+
+<p>Ce test dit&nbsp;: "ce que return la méthode login_twitter ne doit pas être égal à <code>nil</code>". Simple, efficace. Des fois il ne faut pas se prendre la tête, surtout quand on débute en code.</p>
+
+<h4>3.4.2. Tester le tweet</h4>
+<p>Bon là c'est un petit peu plus tendu. Si ton programme a bien marché, c'est qu'il a réussi à envoyer un tweet. Le souci est que tu n'as pas forcément envie d'envoyer un tweet pour tester ton programme en amont avec Rspec. Imagine un autre cas extrême&nbsp;: tu ne voudrais pas tester une méthode <code>send_email_to_all_users</code> qui va spammer tous tes utilisateurs. Ainsi, nous ne testerons pas cette méthode aujourd'hui&nbsp;: tu verras plus tard avec Rails les astuces des tests de gems.</p>
+
+
+<h3>3.5. Quelques rappels et astuces de pro</h3>
+<p>Maintenant que tu as balancé ton premier "Hello world" sur Twitter, on va te laisser écrire ton bot Twitter. Mais avant de te lâcher dans la nature, puisque nous ne sommes pas des monstres&nbsp;: voici quelques conseils.</p>
+
+<h4>3.5.1. Clés d'API et GitHub =&gt; Dotenv</h4>
+<p>On ne le répétera jamais assez&nbsp;: <b>il ne faut JAMAIS push sur un repo GitHub public vos clés d'API</b>. Si tu as peur de donner ton numéro de téléphone à Twitter mais que tu balances tes clés d'APIs en public, inverse vite ces habitudes pour éviter de te retrouver avec des factures bizarres, toutes tes données accessibles où simplement de voir ton compte tweeter des pubs de fausses Ray-Ban.</p>
+
+<h4>3.5.2. PRY</h4>
+<p>Au début, ton bot Twitter risque de se péter et balancer des erreurs à chaque exécution. Ainsi, utiliser Pry pour avancer à tâtons dans ton programme et avoir la main dessus est plus que recommandé. Cela te sera utile pour deux raisons :</p>
+
+<ol>
+  <li>Tu vas avancer bien plus vite, car tu testes très rapidement si tes lignes sont valables.</li>
+  <li>Pas besoin de redémarrer ton programme quand tu auras un bug. Au bout d'un certain nombre de <code>Twitter::REST::Client.new</code>, Twitter bloque ton compte pour 5-10 minutes. Et si tu fais trop de <code>client.update</code>, il va carrément te bloquer. Ceci est dû au fait qu'ils veulent éviter les robots spammeurs&nbsp;: <code>binding.pry</code> permet d'éviter de redémarrer tout ton programme, avec des <code>puts</code> qui cherchent un bug, évitant ainsi de te faire bloquer définitivement…</li>
+</ol>
+
+
+<h2>4. Points importants à retenir</h2>
+<p>Grâce aux APIs, il est possible d'utiliser les fonctionnalités d'un service en se connectant dessus. Twitter possède une API et il existe <a href="https://github.com/sferik/twitter" target="_blank">une gem</a> qui permet de l'utiliser très facilement.</p>
+
+<p>Pour faire marcher un programme avec la gem, il faut les 4 clefs d'API dans un <code>.env</code>. Ensuite, le programme-type ressemble à ça :</p>
+<pre class=" language-ruby"><code class=" language-ruby">require <span class="token string">'twitter'</span>
+  require <span class="token string">'dotenv'</span>
+
+  <span class="token const">Dotenv</span><span class="token punctuation">.</span>load
+
+client <span class="token operator">=</span> <span class="token const">Twitter</span><span class="token punctuation">:</span><span class="token symbol">:REST</span><span class="token punctuation">:</span><span class="token symbol">:Client</span><span class="token punctuation">.</span><span class="token keyword">new</span> <span class="token keyword">do</span> <span class="token operator">|</span>config<span class="token operator">|</span>
+  config<span class="token punctuation">.</span>consumer_key        <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_CONSUMER_KEY"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>consumer_secret     <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_CONSUMER_SECRET"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>access_token        <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_ACCESS_TOKEN"</span><span class="token punctuation">]</span>
+  config<span class="token punctuation">.</span>access_token_secret <span class="token operator">=</span> <span class="token const">ENV</span><span class="token punctuation">[</span><span class="token string">"TWITTER_ACCESS_TOKEN_SECRET"</span><span class="token punctuation">]</span>
+<span class="token keyword">end</span>
+
+client<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token string">'Mon premier tweet en Ruby !!!!'</span><span class="token punctuation">)</span></code></pre>
+<p> Il existe plein d'exemples <a href="https://github.com/sferik/twitter" target="_blank">dans le README de la gem</a>. Pour implémenter des tests, on te demandera aujourd'hui de simplement tester la méthode <code>login_twitter</code>.</p>
+
+<p>Enfin, ne mets jamais tes clés d'API en clair dans un repo GitHub, et pense à bien utiliser la gem PRY pour débugger facilement ton programme.</p>
+
+
+<h2>5. Pour aller plus loin</h2>
+<p>Pour découvrir l'univers des APIs, Zapier a écrit <a href="https://zapier.com/learn/apis/" target="_blank">un super livre</a> à ce sujet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #FF4081 ">
+          <h1>Projet : Bot Twitter</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/projects/7/project_submissions/new?locale=fr">
+                  <i class="ft-edit"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            
+<h2>1. Introduction</h2>
+<p>Dans ce projet, tous les moussaillons de THP vont se donner la main pour changer Internet et les réseaux sociaux. On va promouvoir tous ensemble la joie, la bonne humeur et la politesse&nbsp;! Il est très important de dire bonjour et vous allez populariser le hashtag <code>#bonjour_monde</code> au près du plus grand nombre.</p>
+
+<p>Tu vas donc coder un bot Twitter, et l'objectif est de faire au mieux la promotion du <code>#bonjour_monde</code>.</p>
+
+<h2>2. Le projet</h2>
+<p>Il va sans dire que ce programme devra checker toutes les cases d'un programme Ruby propre :</p>
+<ul>
+  <li>Utiliser un Gemfile, dans lequel tu pourras trouver les gems dont tu te serviras pour l'exercice : Ruby avec la bonne version, Twitter, Rubocop, Pry, Rspec et Dotenv.</li>
+  <li>Une architecture de dossier type (lib, spec, etc.).</li>
+  <li>Un fichier <code>.env</code> dans le <code>.gitignore.</code></li>
+  <li>Un README.md qui explique bien les choses</li>
+</ul>
+<p></p>
+
+<h3>2.1. Il va dire bonjour</h3>
+<p>Les journalistes sont quasiment les derniers qui croient que Twitter, c'est encore cool&nbsp;: ils sont tous sur la plateforme. Profitons-en&nbsp;! Fais un bot Twitter qui va contacter les journalistes et promouvoir notre super hashtag. Voici une liste de handles (= noms d'utilisateurs sur Twitter) de journalistes :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby"><span class="token punctuation">[</span><span class="token string">"@jcunniet"</span><span class="token punctuation">,</span> <span class="token string">"@Aziliz31"</span><span class="token punctuation">,</span><span class="token string">"@ssoumier"</span><span class="token punctuation">,</span><span class="token string">"@marionsouzeau"</span><span class="token punctuation">,</span><span class="token string">"@gaellombart"</span><span class="token punctuation">,</span><span class="token string">"@bendarag"</span><span class="token punctuation">,</span><span class="token string">"@AurelieLebelle"</span><span class="token punctuation">,</span><span class="token string">"@julienduffe"</span><span class="token punctuation">,</span><span class="token string">"@thomaspoupeau"</span><span class="token punctuation">,</span><span class="token string">"@LilyRossignol"</span><span class="token punctuation">,</span><span class="token string">"@ClairGuedon"</span><span class="token punctuation">,</span><span class="token string">"@stephanieauguy"</span><span class="token punctuation">,</span><span class="token string">"@claw_prolongeau"</span><span class="token punctuation">,</span><span class="token string">"@_JulieMenard"</span><span class="token punctuation">,</span><span class="token string">"@LColcomb"</span><span class="token punctuation">,</span><span class="token string">"@Zlauwereys"</span><span class="token punctuation">,</span><span class="token string">"@MeLonguet"</span><span class="token punctuation">,</span><span class="token string">"@DorotheeLN"</span><span class="token punctuation">,</span><span class="token string">"@NolwennCosson"</span><span class="token punctuation">,</span><span class="token string">"@ADaboval"</span><span class="token punctuation">,</span><span class="token string">"@Remibaldy"</span><span class="token punctuation">,</span><span class="token string">"@bderveaux"</span><span class="token punctuation">,</span><span class="token string">"@amandechap"</span><span class="token punctuation">,</span><span class="token string">"@ELODIESOULIE"</span><span class="token punctuation">,</span><span class="token string">"@nbongarcon"</span><span class="token punctuation">,</span><span class="token string">"@HeloAb"</span><span class="token punctuation">,</span><span class="token string">"@gregplou"</span><span class="token punctuation">,</span><span class="token string">"@BenoitBerthe"</span><span class="token punctuation">,</span><span class="token string">"@LauraBruneau89"</span><span class="token punctuation">,</span><span class="token string">"@Anthony_Lieures"</span><span class="token punctuation">,</span><span class="token string">"@Sharonwaj"</span><span class="token punctuation">,</span><span class="token string">"@mcsonkin"</span><span class="token punctuation">,</span><span class="token string">"@pverduzier"</span><span class="token punctuation">,</span><span class="token string">"@emiliel3"</span><span class="token punctuation">,</span><span class="token string">"@Julien_MARION"</span><span class="token punctuation">,</span><span class="token string">"@SophiFay"</span><span class="token punctuation">,</span><span class="token string">"@bdelombre"</span><span class="token punctuation">,</span><span class="token string">"@annalecerf"</span><span class="token punctuation">,</span><span class="token string">"@AdriaBudry"</span><span class="token punctuation">,</span><span class="token string">"@DejNikolic"</span><span class="token punctuation">,</span><span class="token string">"@iJaffre"</span><span class="token punctuation">,</span><span class="token string">"@CyrusleVirus"</span><span class="token punctuation">,</span><span class="token string">"@GPardigon"</span><span class="token punctuation">,</span><span class="token string">"@e_vallerey"</span><span class="token punctuation">,</span><span class="token string">"@IsabelleSouquet"</span><span class="token punctuation">,</span><span class="token string">"@AudeDavidRossi"</span><span class="token punctuation">,</span><span class="token string">"@Yoann_Pa"</span><span class="token punctuation">,</span><span class="token string">"@CeliaPenavaire"</span><span class="token punctuation">,</span><span class="token string">"@perraultvincent"</span><span class="token punctuation">,</span><span class="token string">"@cboulate"</span><span class="token punctuation">,</span><span class="token string">"@JustineWeyl"</span><span class="token punctuation">,</span><span class="token string">"@Paulinejacot"</span><span class="token punctuation">,</span><span class="token string">"@juliechab"</span><span class="token punctuation">,</span><span class="token string">"@aslechevallier"</span><span class="token punctuation">,</span><span class="token string">"@phnou"</span><span class="token punctuation">,</span><span class="token string">"@Seb_Pommier"</span><span class="token punctuation">,</span><span class="token string">"@Alex_Bensaid"</span><span class="token punctuation">,</span><span class="token string">"@GuillaumeGaven"</span><span class="token punctuation">,</span><span class="token string">"@annelaurechouin"</span><span class="token punctuation">,</span><span class="token string">"@Oliviader"</span><span class="token punctuation">,</span><span class="token string">"@guerricp"</span><span class="token punctuation">,</span><span class="token string">"@JMMarchaut"</span><span class="token punctuation">,</span><span class="token string">"@cyceron"</span><span class="token punctuation">,</span><span class="token string">"@gregory_raymond"</span><span class="token punctuation">,</span><span class="token string">"@vhunsinger"</span><span class="token punctuation">,</span><span class="token string">"@l_peillon"</span><span class="token punctuation">,</span><span class="token string">"@fannyguinochet"</span><span class="token punctuation">,</span><span class="token string">"@EAssayag"</span><span class="token punctuation">,</span><span class="token string">"@YvonHerry"</span><span class="token punctuation">,</span><span class="token string">"@JohanGarciajg"</span><span class="token punctuation">,</span><span class="token string">"@saidlabidi"</span><span class="token punctuation">,</span><span class="token string">"@lauranneprov"</span><span class="token punctuation">,</span><span class="token string">"@LeaDavy"</span><span class="token punctuation">,</span><span class="token string">"@francois_remy"</span><span class="token punctuation">,</span><span class="token string">"@CGuicheteau"</span><span class="token punctuation">,</span><span class="token string">"@FloMaillet"</span><span class="token punctuation">,</span><span class="token string">"@m_perroud"</span><span class="token punctuation">,</span><span class="token string">"@oBrunet_TSMF"</span><span class="token punctuation">,</span><span class="token string">"@MoonVdc"</span><span class="token punctuation">,</span><span class="token string">"@jc2taille"</span><span class="token punctuation">,</span><span class="token string">"@NellyMoussu"</span><span class="token punctuation">,</span><span class="token string">"@VirginK"</span><span class="token punctuation">,</span><span class="token string">"@b_misa"</span><span class="token punctuation">,</span><span class="token string">"@FabriceCouste"</span><span class="token punctuation">,</span><span class="token string">"@barbara_prose"</span><span class="token punctuation">,</span><span class="token string">"@lelia2m"</span><span class="token punctuation">,</span><span class="token string">"@brunoaskenazi"</span><span class="token punctuation">,</span><span class="token string">"@laurenechamp"</span><span class="token punctuation">,</span><span class="token string">"@ysisbox"</span><span class="token punctuation">,</span><span class="token string">"@juliengagliardi"</span><span class="token punctuation">,</span><span class="token string">"@PierreLel"</span><span class="token punctuation">,</span><span class="token string">"@kdeniau"</span><span class="token punctuation">,</span><span class="token string">"@_TerraInc"</span><span class="token punctuation">,</span><span class="token string">"@DominicArpin"</span><span class="token punctuation">,</span><span class="token string">"@antoinfonteneau"</span><span class="token punctuation">,</span><span class="token string">"@nanotousch"</span><span class="token punctuation">,</span><span class="token string">"@jb_roch"</span><span class="token punctuation">,</span><span class="token string">"@YaniKhezzar"</span><span class="token punctuation">,</span><span class="token string">"@Anne_Bechet"</span><span class="token punctuation">,</span><span class="token string">"@NCapart"</span><span class="token punctuation">,</span><span class="token string">"@SamyBenNaceur"</span><span class="token punctuation">,</span><span class="token string">"@Joumany"</span><span class="token punctuation">,</span><span class="token string">"@Julietteraynal"</span><span class="token punctuation">,</span><span class="token string">"@TGiraudet"</span><span class="token punctuation">,</span><span class="token string">"@SaraTanit"</span><span class="token punctuation">,</span><span class="token string">"@HappeFrederic"</span><span class="token punctuation">,</span><span class="token string">"@antoinellorca"</span><span class="token punctuation">,</span><span class="token string">"@michelpicot"</span><span class="token punctuation">,</span><span class="token string">"@Sev_Ryne"</span><span class="token punctuation">,</span><span class="token string">"@bobdobolino"</span><span class="token punctuation">,</span><span class="token string">"@murdever"</span><span class="token punctuation">,</span><span class="token string">"@YGrandmontagne"</span><span class="token punctuation">,</span><span class="token string">"@Mnyo"</span><span class="token punctuation">,</span><span class="token string">"@EdKOSCIANSKI"</span><span class="token punctuation">,</span><span class="token string">"@tnoisette"</span><span class="token punctuation">,</span><span class="token string">"@jankari"</span><span class="token punctuation">,</span><span class="token string">"@delbello_rom"</span><span class="token punctuation">,</span><span class="token string">"@rflechaux"</span><span class="token punctuation">,</span><span class="token string">"@NadiaSorelli"</span><span class="token punctuation">,</span><span class="token string">"@IT_Digital"</span><span class="token punctuation">,</span><span class="token string">"@abarbaux"</span><span class="token punctuation">,</span><span class="token string">"@PhilippeLeroy"</span><span class="token punctuation">,</span><span class="token string">"@schaptal"</span><span class="token punctuation">,</span><span class="token string">"@marionspee"</span><span class="token punctuation">,</span><span class="token string">"@lisavignoli"</span><span class="token punctuation">,</span><span class="token string">"@ChloeAeberhardt"</span><span class="token punctuation">,</span><span class="token string">"@MartineJacot"</span><span class="token punctuation">,</span><span class="token string">"@JuliaPascualita"</span><span class="token punctuation">,</span><span class="token string">"@curieusedetout"</span><span class="token punctuation">,</span><span class="token string">"@sgraveleau"</span><span class="token punctuation">,</span><span class="token string">"@bif_o"</span><span class="token punctuation">,</span><span class="token string">"@zinebdryef"</span><span class="token punctuation">,</span><span class="token string">"@apiquard"</span><span class="token punctuation">,</span><span class="token string">"@pierrehaski"</span><span class="token punctuation">,</span><span class="token string">"@StephanieDelmas"</span><span class="token punctuation">,</span><span class="token string">"@Blandine_Garot"</span><span class="token punctuation">,</span><span class="token string">"@vergara_i"</span><span class="token punctuation">,</span><span class="token string">"@evan_lebastard"</span><span class="token punctuation">,</span><span class="token string">"@SophieVclt"</span><span class="token punctuation">,</span><span class="token string">"@OlivierLevrault"</span><span class="token punctuation">,</span><span class="token string">"@alicedorgeval"</span><span class="token punctuation">,</span><span class="token string">"@LouiseMalnoy"</span><span class="token punctuation">,</span><span class="token string">"@alix_fx"</span><span class="token punctuation">,</span><span class="token string">"@pierre_baudis"</span><span class="token punctuation">,</span><span class="token string">"@LucMagoutier"</span><span class="token punctuation">,</span><span class="token string">"@AgatheMuller"</span><span class="token punctuation">,</span><span class="token string">"@SGianninelli"</span><span class="token punctuation">,</span><span class="token string">"@PaulineBoyer33"</span><span class="token punctuation">,</span><span class="token string">"@NaomiHalll"</span><span class="token punctuation">,</span><span class="token string">"@romaindlx"</span><span class="token punctuation">,</span><span class="token string">"@marionbr"</span><span class="token punctuation">,</span><span class="token string">"@Burtschy"</span><span class="token punctuation">,</span><span class="token string">"@JacobEtienne"</span><span class="token punctuation">,</span><span class="token string">"@as_lizzani"</span><span class="token punctuation">,</span><span class="token string">"@marie_simon"</span><span class="token punctuation">,</span><span class="token string">"@LaureDaussy"</span><span class="token punctuation">,</span><span class="token string">"@FabriceAmedeo"</span><span class="token punctuation">,</span><span class="token string">"@LoubnaChlaikhy"</span><span class="token punctuation">,</span><span class="token string">"@PlummerWilliam"</span><span class="token punctuation">,</span><span class="token string">"@OlivierMarin1"</span><span class="token punctuation">,</span><span class="token string">"@alaurefremont"</span><span class="token punctuation">,</span><span class="token string">"@mwesfreid"</span><span class="token punctuation">,</span><span class="token string">"@ChBaDe"</span><span class="token punctuation">,</span><span class="token string">"@pmathon"</span><span class="token punctuation">,</span><span class="token string">"@theobaldmarie"</span><span class="token punctuation">,</span><span class="token string">"@Lnpagesy"</span><span class="token punctuation">,</span><span class="token string">"@marclandre"</span><span class="token punctuation">,</span><span class="token string">"@paoliniesther"</span><span class="token punctuation">,</span><span class="token string">"@Feertchak"</span><span class="token punctuation">,</span><span class="token string">"@JBLitzler"</span><span class="token punctuation">,</span><span class="token string">"@GuillaumeErrard"</span><span class="token punctuation">,</span><span class="token string">"@quentinperinel"</span><span class="token punctuation">,</span><span class="token string">"@TristanQM"</span><span class="token punctuation">,</span><span class="token string">"@mlbo"</span><span class="token punctuation">,</span><span class="token string">"@constancejamet"</span><span class="token punctuation">,</span><span class="token string">"@LoraTerrazas"</span><span class="token punctuation">,</span><span class="token string">"@emiliegeffray"</span><span class="token punctuation">,</span><span class="token string">"@Mathilde_Sd"</span><span class="token punctuation">,</span><span class="token string">"@CaroPiquet"</span><span class="token punctuation">,</span><span class="token string">"@DCanivez"</span><span class="token punctuation">,</span><span class="token string">"@TIM_7375"</span><span class="token punctuation">,</span><span class="token string">"@blandinelc"</span><span class="token punctuation">,</span><span class="token string">"@ivanrioufol"</span><span class="token punctuation">,</span><span class="token string">"@arthurberdah"</span><span class="token punctuation">,</span><span class="token string">"@SarahLecoeuvre"</span><span class="token punctuation">,</span><span class="token string">"@guillaume_gui"</span><span class="token punctuation">,</span><span class="token string">"@DamienMercereau"</span><span class="token punctuation">,</span><span class="token string">"@W_Chloe"</span><span class="token punctuation">,</span><span class="token string">"@Assma_MD"</span><span class="token punctuation">,</span><span class="token string">"@EugenieBastie"</span><span class="token punctuation">,</span><span class="token string">"@HiTech_lexpress"</span><span class="token punctuation">,</span><span class="token string">"@bcondominas"</span><span class="token punctuation">,</span><span class="token string">"@Laurie_Z_"</span><span class="token punctuation">,</span><span class="token string">"@jeanfrancgerard"</span><span class="token punctuation">,</span><span class="token string">"@MathieuPagura"</span><span class="token punctuation">,</span><span class="token string">"@BGUYF"</span><span class="token punctuation">,</span><span class="token string">"@AlainPiffaretti"</span><span class="token punctuation">,</span><span class="token string">"@AudreyKucinskas"</span><span class="token punctuation">,</span><span class="token string">"@julienhory"</span><span class="token punctuation">,</span><span class="token string">"@Pierrefalga"</span><span class="token punctuation">,</span><span class="token string">"@TiphThuillier"</span><span class="token punctuation">,</span><span class="token string">"@cdaniez"</span><span class="token punctuation">,</span><span class="token string">"@LigerBaptiste"</span><span class="token punctuation">,</span><span class="token string">"@D_Peras"</span><span class="token punctuation">,</span><span class="token string">"@julie_dlb"</span><span class="token punctuation">,</span><span class="token string">"@julian2lamancha"</span><span class="token punctuation">,</span><span class="token string">"@GaetaneDeljurie"</span><span class="token punctuation">,</span><span class="token string">"@JulianMattei"</span><span class="token punctuation">,</span><span class="token string">"@M_Vicuna"</span><span class="token punctuation">,</span><span class="token string">"@DeBruynOlivier"</span><span class="token punctuation">,</span><span class="token string">"@Nehed_Jendoubi"</span><span class="token punctuation">,</span><span class="token string">"@antoine_grenapi"</span><span class="token punctuation">,</span><span class="token string">"@ColonnaGen"</span><span class="token punctuation">,</span><span class="token string">"@VictoriaGairin"</span><span class="token punctuation">,</span><span class="token string">"@Clement_Lacombe"</span><span class="token punctuation">,</span><span class="token string">"@TVigoureux"</span><span class="token punctuation">,</span><span class="token string">"@MargauxObriot"</span><span class="token punctuation">,</span><span class="token string">"@solinedelos"</span><span class="token punctuation">,</span><span class="token string">"@RocheSabine"</span><span class="token punctuation">,</span><span class="token string">"@dangerkens"</span><span class="token punctuation">,</span><span class="token string">"@EdouardDutour"</span><span class="token punctuation">,</span><span class="token string">"@MDondeyne"</span><span class="token punctuation">,</span><span class="token string">"@DupuisNathalie1"</span><span class="token punctuation">,</span><span class="token string">"@bouscarel"</span><span class="token punctuation">,</span><span class="token string">"@Mathieu2jean"</span><span class="token punctuation">,</span><span class="token string">"@Sophie_T_J"</span><span class="token punctuation">,</span><span class="token string">"@laurentcalixte"</span><span class="token punctuation">,</span><span class="token string">"@patrockwilliams"</span><span class="token punctuation">,</span><span class="token string">"@PascaleKremer"</span><span class="token punctuation">,</span><span class="token string">"@AlexJaquin"</span><span class="token punctuation">,</span><span class="token string">"@LauraIsaaz"</span><span class="token punctuation">,</span><span class="token string">"@cath_robin"</span><span class="token punctuation">,</span><span class="token string">"@Del_Gautherin"</span><span class="token punctuation">,</span><span class="token string">"@Isaduriez"</span><span class="token punctuation">,</span><span class="token string">"@lucietuile"</span><span class="token punctuation">,</span><span class="token string">"@AugeyBastien"</span><span class="token punctuation">,</span><span class="token string">"@mcastagnet"</span><span class="token punctuation">,</span><span class="token string">"@AminaKalache"</span><span class="token punctuation">,</span><span class="token string">"@mvaudano"</span><span class="token punctuation">,</span><span class="token string">"@CParrot"</span><span class="token punctuation">,</span><span class="token string">"@ombelinetips"</span><span class="token punctuation">,</span><span class="token string">"@_JoinLion"</span><span class="token punctuation">,</span><span class="token string">"@BarbolosiRose"</span><span class="token punctuation">,</span><span class="token string">"@ToiBruno1"</span><span class="token punctuation">,</span><span class="token string">"@FloraClodic"</span><span class="token punctuation">,</span><span class="token string">"@xjbdx"</span><span class="token punctuation">,</span><span class="token string">"@AlexiaEy"</span><span class="token punctuation">,</span><span class="token string">"@Emjy_STARK"</span><span class="token punctuation">,</span><span class="token string">"@elcoco01"</span><span class="token punctuation">,</span><span class="token string">"@rabilebon"</span><span class="token punctuation">,</span><span class="token string">"@pflovens_"</span><span class="token punctuation">,</span><span class="token string">"@FabriceFrossard"</span><span class="token punctuation">,</span><span class="token string">"@MorganeSERRES"</span><span class="token punctuation">,</span><span class="token string">"@MarjolaineKoch"</span><span class="token punctuation">,</span><span class="token string">"@edgarsnow"</span><span class="token punctuation">,</span><span class="token string">"@SRNLF"</span><span class="token punctuation">,</span><span class="token string">"@CChassigneux"</span><span class="token punctuation">,</span><span class="token string">"@NassiraELM"</span><span class="token punctuation">,</span><span class="token string">"@NewsRicard"</span><span class="token punctuation">,</span><span class="token string">"@Sandreene"</span><span class="token punctuation">,</span><span class="token string">"@Emilezrt"</span><span class="token punctuation">,</span><span class="token string">"@Pierre_Do"</span><span class="token punctuation">,</span><span class="token string">"@Micode"</span><span class="token punctuation">,</span><span class="token string">"@CColumelli"</span><span class="token punctuation">,</span><span class="token string">"@DavidAbiker"</span><span class="token punctuation">,</span><span class="token string">"@ClementBergantz"</span><span class="token punctuation">,</span><span class="token string">"@benjaminrabier"</span><span class="token punctuation">,</span><span class="token string">"@celinekallmann"</span><span class="token punctuation">,</span><span class="token string">"@edwyplenel"</span><span class="token punctuation">,</span><span class="token string">"@C_Barbier"</span><span class="token punctuation">,</span><span class="token string">"@JJBourdin_RMC"</span><span class="token punctuation">,</span><span class="token string">"@LaurenceFerrari"</span><span class="token punctuation">,</span><span class="token string">"@aslapix"</span><span class="token punctuation">,</span><span class="token string">"@IsaMillet"</span><span class="token punctuation">,</span><span class="token string">"@MaximeSwitek"</span><span class="token punctuation">,</span><span class="token string">"@tomjoubert"</span><span class="token punctuation">,</span><span class="token string">"@jszanchi"</span><span class="token punctuation">,</span><span class="token string">"@roqueeva"</span><span class="token punctuation">,</span><span class="token string">"@XavierBiseul"</span><span class="token punctuation">,</span><span class="token string">"@florencesantrot"</span><span class="token punctuation">,</span><span class="token string">"@AntoineCrochet"</span><span class="token punctuation">,</span><span class="token string">"@freeman59"</span><span class="token punctuation">,</span><span class="token string">"@MaudeML"</span><span class="token punctuation">,</span><span class="token string">"@philippe_gulpi"</span><span class="token punctuation">,</span><span class="token string">"@mathieum76"</span><span class="token punctuation">,</span><span class="token string">"@kiouari"</span><span class="token punctuation">,</span><span class="token string">"@imanemoustakir"</span><span class="token punctuation">,</span><span class="token string">"@BenedicteMallet"</span><span class="token punctuation">,</span><span class="token string">"@Emilie_Brouze"</span><span class="token punctuation">,</span><span class="token string">"@antoinebarret"</span><span class="token punctuation">,</span><span class="token string">"@_nicolasbocquet"</span><span class="token punctuation">,</span><span class="token string">"@remibuhagiar"</span><span class="token punctuation">,</span><span class="token string">"@CourretB"</span><span class="token punctuation">,</span><span class="token string">"@AymericRobert"</span><span class="token punctuation">,</span><span class="token string">"@miraelmartins"</span><span class="token punctuation">,</span><span class="token string">"@pmaniere"</span><span class="token punctuation">,</span><span class="token string">"@jesuisraphk"</span><span class="token punctuation">,</span><span class="token string">"@David_Ingram"</span><span class="token punctuation">,</span><span class="token string">"@pcelerier"</span><span class="token punctuation">,</span><span class="token string">"@technomedia"</span><span class="token punctuation">,</span><span class="token string">"@Geraldinedauver"</span><span class="token punctuation">,</span><span class="token string">"@ThierryLabro"</span><span class="token punctuation">,</span><span class="token string">"@Newsdusud"</span><span class="token punctuation">,</span><span class="token string">"@nrauline"</span><span class="token punctuation">,</span><span class="token string">"@gbregeras"</span><span class="token punctuation">,</span><span class="token string">"@SCouasnonBFM"</span><span class="token punctuation">,</span><span class="token string">"@actualites_nrv"</span><span class="token punctuation">,</span><span class="token string">"@dimitrimoulins"</span><span class="token punctuation">,</span><span class="token string">"@oli_aura"</span><span class="token punctuation">,</span><span class="token string">"@FabieChiche"</span><span class="token punctuation">,</span><span class="token string">"@Vincent_Raimblt"</span><span class="token punctuation">,</span><span class="token string">"@ChristophGreuet"</span><span class="token punctuation">,</span><span class="token string">"@PAlbuchay"</span><span class="token punctuation">,</span><span class="token string">"@MarrauddesGrot"</span><span class="token punctuation">,</span><span class="token string">"@vtalmon"</span><span class="token punctuation">,</span><span class="token string">"@cedric"</span><span class="token punctuation">,</span><span class="token string">"@olivierfrigara"</span><span class="token punctuation">,</span><span class="token string">"@Julien_Jay"</span><span class="token punctuation">,</span><span class="token string">"@LydiaBerroyer"</span><span class="token punctuation">,</span><span class="token string">"@Shuua"</span><span class="token punctuation">,</span><span class="token string">"@datisdaz"</span><span class="token punctuation">,</span><span class="token string">"@Steuph"</span><span class="token punctuation">,</span><span class="token string">"@ameliecharnay"</span><span class="token punctuation">,</span><span class="token string">"@Bruno_LesNums"</span><span class="token punctuation">,</span><span class="token string">"@LelloucheNico"</span><span class="token punctuation">,</span><span class="token string">"@CciliaDiQuinzio"</span><span class="token punctuation">,</span><span class="token string">"@Elodie_C"</span><span class="token punctuation">,</span><span class="token string">"@SylvRolland"</span><span class="token punctuation">,</span><span class="token string">"@Kocobe"</span><span class="token punctuation">,</span><span class="token string">"@FL_Debes"</span><span class="token punctuation">,</span><span class="token string">"@jdupontcalbo"</span><span class="token punctuation">,</span><span class="token string">"@GarciaVictor_"</span><span class="token punctuation">,</span><span class="token string">"@NicoRichaud"</span><span class="token punctuation">,</span><span class="token string">"@RHoueix"</span><span class="token punctuation">,</span><span class="token string">"@simottel"</span><span class="token punctuation">,</span><span class="token string">"@DamienLicata"</span><span class="token punctuation">,</span><span class="token string">"@annabelle_L"</span><span class="token punctuation">,</span><span class="token string">"@Lea_Lejeune"</span><span class="token punctuation">,</span><span class="token string">"@axel_deb"</span><span class="token punctuation">,</span><span class="token string">"@marin_eben"</span><span class="token punctuation">,</span><span class="token string">"@ptiberry"</span><span class="token punctuation">,</span><span class="token string">"@MatthieuDelach"</span><span class="token punctuation">,</span><span class="token string">"@sandrinecassini"</span><span class="token punctuation">,</span><span class="token string">"@benjaminferran"</span><span class="token punctuation">,</span><span class="token string">"@ppgarcia75"</span><span class="token punctuation">,</span><span class="token string">"@NotPatrick"</span><span class="token punctuation">,</span><span class="token string">"@ivalerio"</span><span class="token punctuation">,</span><span class="token string">"@FabienneSchmitt"</span><span class="token punctuation">,</span><span class="token string">"@alexgoude"</span><span class="token punctuation">,</span><span class="token string">"@JeromeColombain"</span><span class="token punctuation">,</span><span class="token string">"@manhack"</span><span class="token punctuation">,</span><span class="token string">"@Capucine_Cousin"</span><span class="token punctuation">,</span><span class="token string">"@Fsorel"</span><span class="token punctuation">,</span><span class="token string">"@oliviertesquet"</span><span class="token punctuation">,</span><span class="token string">"@marjoriepaillon"</span><span class="token punctuation">,</span><span class="token string">"@ginades"</span><span class="token punctuation">,</span><span class="token string">"@PierreTran"</span><span class="token punctuation">,</span><span class="token string">"@DelphineCuny"</span><span class="token punctuation">,</span><span class="token string">"@reesmarc"</span><span class="token punctuation">,</span><span class="token string">"@lauratenoudji"</span><span class="token punctuation">,</span><span class="token string">"@ldupin"</span><span class="token punctuation">,</span><span class="token string">"@carolinedescham"</span><span class="token punctuation">,</span><span class="token string">"@Lucile_Quillet"</span><span class="token punctuation">,</span><span class="token string">"@cgabizon"</span><span class="token punctuation">,</span><span class="token string">"@Allocab"</span><span class="token punctuation">,</span><span class="token string">"@epenser"</span><span class="token punctuation">,</span><span class="token string">"@JAGventeprivee"</span><span class="token punctuation">,</span><span class="token string">"@frwrds"</span><span class="token punctuation">,</span><span class="token string">"@Laure__Bourdon"</span><span class="token punctuation">,</span><span class="token string">"@Xavier75"</span><span class="token punctuation">,</span><span class="token string">"@maximeverner"</span><span class="token punctuation">,</span><span class="token string">"@s_jourdain"</span><span class="token punctuation">]</span></code></pre>
+
+<p>Ton objectif est de faire un programme qui en prend 5 au hasard, et qui leur tweet une phrase sympa (une blague, un truc qui leur dit que leur dernier article est cool, un remerciement pour leur rôle central dans le fonctionnement de notre démocratie… ce que tu veux&nbsp;!), avec le hashtag <code>#bonjour_monde</code>. Un seul tweet par journaliste suffit (5 tweet en tout donc) pour éviter d'être trop lourd et de te faire bannir de Twitter.</p>
+
+<div class="card box-shadow-0 border-danger">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+      <p class="card-text">Twitter est sans pitié et n'hésitera pas à bloquer tes accès si tu fais trop de tweets et mentions aux personnes qui ne te suivent pas. Au-delà de 15-20 tweets, tu risques de te faire ban et être condamné à te tourner les pouces le reste de la journée. Fais des mentions et des tweets avec parcimonie donc 😉</p>
+      <p>Si tu te fais bannir, tu vas devoir utiliser les clés d'API de quelqu'un d'autre ou alors c'est la fin du projet pour aujourd'hui…</p>
+    </div>
+  </div>
+</div>
+
+<p>Si tu veux rajouter un petit <code>@the_hacking_pro</code> (référence à notre compte Twitter) dans ton tweet pour les interpeler et nous faire un peu de pub, n'hésite pas 😇 </p>
+
+<h3>2.2. Il va liker bonjour</h3>
+<p>Maintenant que tu as dit bonjour à Internet, nous allons te demander de liker les derniers tweets (minimum les 25 derniers) qui ont le hashtag <code>#bonjour_monde</code>. Cela leur donnera une visibilité de malade en créant une grande chaîne de bienveillance 🌈. Pour cela il existe plein de façons possible… nous te laissons le choix&nbsp;!</p>
+
+<h3>2.3. Il va follow bonjour</h3>
+<p>Maintenant que tu es la star du like, nous allons te demander de follow les dernières personnes (minimum 20) qui ont tweeté avec le hashtag <code>#bonjour_monde</code>. Idem, cela donnera plein de visibilité et vous serez les stars de Twitter 💙.</p>
+
+<p>Comme toute la communauté THP va jouer avec le hashtag #bonjour_monde, n’hésitez pas à vous rencarder entre vous pour faire buzzer un maximum le hashtag. Tous les coups sont permis, donc amusez-vous bien&nbsp;!</p>
+
+<h3>2.4 Il like et follow en live</h3>
+<p>Maintenant tu vas utiliser la fonction <code>Streaming</code> de l'API Twitter afin de réagir en live. Mets en place un robot qui like et follow les comptes tweetant le <code>#bonjour_monde</code> dès l'apparition du Tweet. Pour rendre le programme un peu visuel, n'hésite pas à mettre des <code>puts</code> dès que tu repères un Tweet comme ça (qu'il apparaisse sur ton terminal)&nbsp;! Et s'ils ne sont pas nombreux, demande à tes potes de Tweeter un peu… mais sans se faire bloquer hein&nbsp;!</p>
+<p>Comme il ne réagit qu'en live, ce programme devra tourner en tâche de fond de ton ordinateur.</p>
+
+
+<h3>2.5. Les tests</h3>
+<p>Comme vu lors de la ressource pour le bot Twitter, le testing des tweets va être un petit peu compliqué. Ainsi pour aujourd'hui, on te demandera de ne tester que la méthode de login.</p>
+
+<h2>3. Rendu attendu</h2>
+<p>Un repo GitHub d'un bot Twitter faisant les 5 points mentionnés ci-dessus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="thp-flashes"></div>
+
+
+
+    <script src="./mercredi_files/dashboard-23e9266bc16687c1cc4d.js.téléchargement"></script>
+    <script charset="utf-8">
+      $('input[name=authenticity_token]').val($('meta[name=csrf-token]').attr('content'));
+    </script>
+
+  
+
+<div class="tooltip fade bs-tooltip-top show" role="tooltip" id="tooltip648328" x-placement="top" style="position: absolute; transform: translate3d(1167px, 375px, 0px); top: 0px; left: 0px; will-change: transform;"><div class="arrow" style="left: 53px;"></div><div class="tooltip-inner">L'art du scrapping</div></div></body></html>

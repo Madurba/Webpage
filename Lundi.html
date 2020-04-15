@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr -->
+<html class="loaded" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./Lundi_files/nr-1167.min.js.téléchargement"></script><script src="./Lundi_files/ccedc1a9b6b946929d14dce625b51c035665d4ea12e846308ede0db968e93f42" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./Lundi_files/mixpanel-2-latest.min.js.téléchargement"></script><script async="" src="./Lundi_files/fbevents.js.téléchargement"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ea4c9be856","applicationID":"130952841","transactionName":"IFYPQUNbWApXFE1WBRBRA1pQRlBJVgcbQUsQUQ5C","queueTime":9,"applicationTime":728,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"ea4c9be856",applicationID:"130952841"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="fbkXejgoA9E4oiMIz4D3yFb1NFmJ9bGWE5myetkOivWUxCxWV2SZlwDq9ZwxGwKwOw31BOi6c0ElVYxPKCeVPA==">
+    <title>Le tableau de bord | The Hacking Project</title>
+<meta name="description" content="Soyez ensemble pour changer le monde">
+<meta name="site_name" content="site">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.thehackingproject.org/assets/favicon/apple-touch-icon-c01aaccf467f7cc3d79bbce743d60779f5b833fdc4500cebd07a5e11a07a5c31.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.thehackingproject.org/assets/favicon/apple-touch-icon-120x120-precomposed-372de868f08319961b72ba7e3b1ed7121e75e29c8294334cb2c911409ea18131.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.thehackingproject.org/assets/favicon/apple-touch-icon-120x120-372de868f08319961b72ba7e3b1ed7121e75e29c8294334cb2c911409ea18131.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.thehackingproject.org/assets/favicon/favicon-32x32-804b12d1c41c60fe721477b7c3b0a32811dc610580dd40ac92f1cc04cbd05ca4.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.thehackingproject.org/assets/favicon/favicon-16x16-d96ba65e5785d32474df9ebc6fbfd5442c751d527b10981a474bc3b7a4079d01.png">
+<link rel="manifest" href="https://www.thehackingproject.org/assets/favicon/manifest-cf975201fd8ac78a1f1a203357573d50031f1cc33436d099743df6428b8a38a2.json">
+<link rel="mask-icon" href="https://www.thehackingproject.org/assets/favicon/safari-pinned-tab-8af1cfcf7525ccdccb490f9f5adad396653a4969b419e0a9a9d3a1088140a912.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://www.thehackingproject.org/assets/favicon/favicon-cbf10361dc90b277565960736d4897fddef5468bff6299811ea9498459d56d21.ico">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig-dab38db6040ef54ac56e91fdd77e3d7b06746a634e87b68c99b59b216cb8611a.xml">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" media="screen" href="./Lundi_files/vendor-128821137548f97dbd0ff4a221f50d92.css">
+    <link rel="stylesheet" media="screen" href="./Lundi_files/dashboard-78ce809f7737f615df0ac51437386498.css">
+    <link rel="stylesheet" media="screen" href="./Lundi_files/dashboard-bc01a66e9be764e6ca8f339ec484791ba4d356ca095c3186208df5aa6dd068d5.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./Lundi_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-105991867-1');
+  </script>
+<!-- End Google Analytics -->
+
+<!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '773401719499556');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=773401719499556&ev=PageView
+    &noscript=1"/>
+    </noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("3a34a32946b2ebf5b2063d502374f392");</script>
+<!-- end Mixpanel -->
+
+  <script>mixpanel.identify("17393");</script>
+
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:995310,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script><script async="" src="./Lundi_files/hotjar-995310.js.téléchargement"></script>
+
+<script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="ccedc1a9b6b946929d14dce625b51c035665d4ea12e846308ede0db968e93f42",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+
+
+    <script src="./Lundi_files/thp-9449c4fa31654fbca9486303833f76ce410e2b8f9fca01b1e3364167fac00444.js.téléchargement"></script>
+    <script src="./Lundi_files/manifest-d41c51acdb2106a1ba99.js.téléchargement"></script>
+    <script src="./Lundi_files/vendor-7cc5a7dd94b61775d543.js.téléchargement"></script>
+    <script src="./Lundi_files/dashboard-cac5bd4f860a3fe4ad5caf186ff8973503c97e1c61aa3ed1942015c4b9ccee25.js.téléchargement"></script>
+
+    <link href="./Lundi_files/css" rel="stylesheet">
+  </head>
+
+  <body class="vertical-layout vertical-menu 2-columns fixed-navbar menu-expanded" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-primary-blue" data-col="2-columns" data-thp-controller="days" data-thp-action="show" data-thp-layout="dashboard">
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light" style="padding:0;">
+  <div class="navbar-wrapper">
+    <div class="navbar-container content">
+      <div class="collapse navbar-collapse show" id="navbar-mobile">
+
+        <!-- Division Gauche -->
+        <ul class="nav navbar-nav mr-auto float-left">
+          <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#"><i class="ft-menu font-large-1"></i></a></li>
+          <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#"><i class="ft-menu"></i></a></li>
+        </ul>
+        <!-- Fin division Gauche -->
+
+        <!-- Division droite -->
+        <ul class="nav navbar-nav float-right">
+
+         <li class="dropdown dropdown-user nav-item">
+          <a class="dropdown-toggle nav-link dropdown-user-link" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#" data-toggle="dropdown">
+              <span class="avatar avatar-online">
+                
+<img alt="avatar" style="max-height: 40px!important; width: auto" class="rounded-circle img-border" src="./Lundi_files/default_profile-a3318a5e66467f9958f16a172f9d15d6.jpg">
+
+              </span>
+          </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="arrow_box_right">
+                <a class="dropdown-toggle nav-link dropdown-user-link" href="https://www.thehackingproject.org/dashboard/users/17393?locale=fr">
+                  <span class="avatar avatar-online pt-0">
+                    
+<img alt="avatar" style="max-height: 40px!important; width: auto" class="rounded-circle img-border" src="./Lundi_files/default_profile-a3318a5e66467f9958f16a172f9d15d6.jpg">
+
+                  </span>
+                  <span class="user-name text-bold-700 ml-1 text-dark"> Charlélie</span>
+</a>                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.thehackingproject.org/dashboard/users/17393/edit?locale=fr">
+                  <i class="ft-edit"></i>Éditer profil</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.thehackingproject.org/dashboard/users/17393/danger?locale=fr">
+                  <i class="ft-alert-triangle"></i>Zone à risques</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" rel="nofollow" data-method="delete" href="https://www.thehackingproject.org/users/sign_out?locale=fr">
+                   <i class="ft-power"></i> Déconnexion
+</a>              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- Fin division Droite-->
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+       <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true" data-img="/packs/packs/dashboard/images/background/02-5c429c538031754c55530f38b4635d03.jpg">
+  <div class="navbar-header">
+    <ul class="nav navbar-nav flex-row">
+      <li class="nav-item mr-auto">
+          <a class="navbar-brand" href="https://www.thehackingproject.org/fr">
+            <h3 class="brand-text">The Hacking Project</h3>
+</a>       </li>
+      <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
+    </ul>
+  </div>
+  <div class="main-menu-content">
+    <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+      <li class=" nav-item">
+        <a href="https://www.thehackingproject.org/dashboard?locale=fr">
+          <i class="ft-monitor"></i>
+          <span class="menu-title" data-i18n="">Aujourd'hui</span>
+</a>      </li>
+
+
+        <li class="nav-item has-sub">
+          <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+            <i class="fa ft-paperclip"></i>
+            <span class="menu-title" data-i18n="">Mes cours</span>
+</a>          <ul class="menu-content">
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/4/weeks?locale=fr">Semaine d'introduction</a>
+              </li>
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/weeks?locale=fr">Fullstack web</a>
+              </li>
+          </ul>
+        </li>
+
+      <li class="">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1?locale=fr">
+          <i class="fa fa-book"></i>
+          <span class="menu-title" data-i18n="">Agenda</span>
+</a>      </li>
+
+      <li class="nav-item has-sub">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+         <i class="fa fa-angle-down"></i>
+        <span class="menu-title" data-i18n="">Le cursus</span>
+</a>        <ul class="menu-content">
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/cursus_submissions_guidelines?locale=fr">Contribuer au cursus ?</a>
+          </li>
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/lessons?locale=fr">Les Ressources</a>
+          </li>
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/projects?locale=fr">Les Projets</a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="nav-item has-sub">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+         <i class="fas fa-user-graduate"></i>
+        <span class="menu-title" data-i18n="">Ma session</span>
+</a>        <ul class="menu-content">
+
+
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/corrections?locale=fr">Mes corrections</a>
+          </li>
+        </ul>
+      </li>
+
+
+        <li class="nav-item has-sub">
+          <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+             <i class="fa ft-award"></i>
+            <span class="menu-title" data-i18n="">Missions</span>
+</a>          <ul class="menu-content">
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/explaination?locale=fr">Guide des missions</a>
+              </li>
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/assignments?locale=fr">Toutes les missions</a>
+              </li>
+              <li>
+                <a class="menu-item" href="https://www.thehackingproject.org/dashboard/courses/1/assignments/new?locale=fr">Proposer une mission</a>
+              </li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item has-sub">
+          <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+            <i class="fa ft-play"></i>
+          <span class="menu-title" data-i18n="">Projets Finaux</span>
+</a>          <ul class="menu-content">
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/courses/1/final_projects?locale=fr">Les Projets Finaux</a>
+            </li>
+          </ul>
+
+          <ul class="menu-content">
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/courses/1/final_project_rules?locale=fr">Tout savoir sur le projet final</a>
+            </li>
+          </ul>
+          <ul class="menu-content">
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/courses/1/final_projects/new?locale=fr">Proposer un projet final</a>
+            </li>
+          </ul>
+        </li>
+
+      <li class="nav-item has-sub">
+        <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+          <i class="fa ft-download"></i>
+          <span class="menu-title" data-i18n="">Documents</span>
+</a>        <ul class="menu-content">
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/quotations/new?locale=fr">Devis</a>
+          </li>
+            <li>
+              <a href="https://www.thehackingproject.org/dashboard/full_session_attestations/new.1?locale=fr">Mon Attestation d'inscription à la formation</a>
+            </li>
+        </ul>
+      </li>
+
+    <li class="nav-item has-sub">
+      <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+        <i class="fa ft-settings"></i>
+        <span class="menu-title" data-i18n="">Mon inscription</span>
+</a>      <ul class="menu-content">
+        <li>
+          <a href="https://www.thehackingproject.org/dashboard/subscriptions_cities/6761/edit?locale=fr">Éditer ville</a>
+        </li>
+      </ul>
+
+      <ul class="menu-content">
+        <li>
+          <a href="https://www.thehackingproject.org/dashboard/subscriptions_groups/6761/edit?locale=fr">Éditer préf. de groupe</a>
+        </li>
+      </ul>
+    </li>
+
+
+
+    <li class="nav-item has-sub">
+      <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#">
+        <i class="fa  fa-cogs"></i>
+        <span class="menu-title">Liens Pratiques</span>
+</a>      <ul class="menu-content">
+          <li>
+            <a href="https://www.thehackingproject.org/dashboard/modalites?locale=fr">Modalités</a>
+          </li>
+        <li>
+          <a href="https://www.thehackingproject.org/dashboard/sessions?locale=fr">S'inscrire à une session</a>
+        </li>
+        <li>
+          <a href="https://blog.thehackingproject.org/2019/01/03/le-guide-de-survie-du-moussaillon/" target="_blank">Le guide de survie</a>
+        </li>
+      </ul>
+    </li>
+
+
+    <br>
+
+    <li class="">
+      <a href="https://www.thehackingproject.org/dashboard/help?locale=fr">
+        <i class="fa ft-help-circle"></i>
+        <span class="menu-title" data-i18n="">Une question ?</span>
+</a>    </li>
+
+
+    </ul>
+  </div>
+  <div class="navigation-background" style="background-image: url(&quot;/packs/packs/dashboard/images/background/02-5c429c538031754c55530f38b4635d03.jpg&quot;);"></div>
+</div>
+
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row"></div>
+        <div class="content-body">
+
+  
+  <div class="row">
+    <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <i class="ft-calendar icon-opacity info font-large-4"></i>
+          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1"></span>
+            <h3 class="info mb-0">
+              Jour 7 /
+              55</h3>
+          </div>
+        </div>
+        <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+          <div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: 12%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="120">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <i class="ft-heart icon-opacity danger font-large-4"></i>
+          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1">Jokers restant</span>
+            <h3 class="danger mb-0">
+              3
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <i class="ft-award icon-opacity success font-large-4"></i>
+          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1">Mes coups de main</span>
+            <h3 class="success mb-0">
+              12
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-xl-3 col-lg-6 col-md-12">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-body">
+        <div class="media d-flex">
+          <div class="align-self-top">
+            <a href="https://www.thehackingproject.org/dashboard/courses/1/assignments?locale=fr">
+              <i class="ft-fast-forward icon-opacity warning font-large-4"></i>
+</a>          </div>
+          <div class="media-body text-right align-self-bottom mt-3">
+            <span class="d-block mb-1 font-medium-1">Missions</span>
+              <div class="badge border-danger danger badge-border">Pas inscrit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h1>
+          Découverte de Ruby
+        </h1>
+      </div>
+      <div class="card-content">
+        <div class="card-body">
+          <div class="card-text">
+            <h2 class="text-center">
+                  <i class="ft-check-square success" data-toggle="tooltip" data-placement="top" title="" data-original-title="Projet bien reçu !"></i>
+              Découverte des tests
+            </h2>
+            <div class="cd-horizontal-timeline loaded">
+              <div class="timeline">
+                <div class="events-wrapper">
+                  <div class="events" style="width: 1800px;">
+                    <ol>
+                          <li>
+                            <a class="selected" style="left:120px;" data-toggle="tooltip" data-placement="top" data-original-title="Découverte des tests" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr">
+                              Lun
+                                  <i class="fa fa-rocket text-danger" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Projet à rendre ce jour-là"></i>
+
+</a>                          </li>
+                          <li>
+                            <a style="left:240px;" data-toggle="tooltip" data-placement="top" data-original-title="Quelques exercices de chauffe en Ruby" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/2?locale=fr">
+                              Mar
+                                  <i class="fa fa-pencil text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Corrections cette journée là"></i>
+
+</a>                          </li>
+                          <li>
+                            <a style="left:360px;" data-toggle="tooltip" data-placement="top" data-original-title="Bot Twitter" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/3?locale=fr" aria-describedby="tooltip554453">
+                              Mer
+                              
+</a>                          </li>
+                          <li>
+                            <a style="left:480px;" data-toggle="tooltip" data-placement="top" data-original-title="L&#39;art du scrapping" href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/4?locale=fr">
+                              Jeu
+                                  <i class="fa fa-rocket text-danger" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Projet à rendre ce jour-là"></i>
+
+</a>                          </li>
+                          <li>
+                            <a href="https://www.thehackingproject.org/dashboard/courses/1/weeks/2/days/1?locale=fr#" style="left: 600px;" data-toggle="tooltip" data-placement="top" data-original-title="Automatisation, serialization">
+                            Ven
+                            <i class="fa fa-lock fa-margin" aria-hidden="true"></i>
+                                <i class="fa fa-pencil text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Corrections cette journée là"></i>
+
+                            </a>
+                          </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Les fameuses corrections qui n'arrivnet que les jours concernés -->
+
+    <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #5E66E5 ">
+          <h1>Cours : Comprendre le peer learning : la méthodologie de THP</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/lessons/322/lesson_submissions/new?locale=fr">
+                  <i class="ft-edit" data-toggle="tooltip" data-placement="top" data-original-title="Proposer une amélioration"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            <p>À The Hacking Project, notre mission est d'inventer l'école du futur. C'est une belle mission mais qui demande un exercice de contorsion pour nos élèves : c'est difficile de faire table rase de la méthode pédagogique que vous avez suivie jusqu'à présent. Dans cette ressource nous allons revenir sur quelques concepts importants qu'il faut que vous ayez afin de réussir au mieux la formation. Maintenant que cela fait deux semaines que tu suis The Hacking Project, tu commences à saisir les enjeux du peer-learning. Cette ressource tombera à point nommé donc !</p>
+
+<p>Si tu ne l'as pas fait, nous t'invitons tout d'abord à lire <a href="https://www.mercialfred.com/topos/education" target="_blank">le fantastique topo de Merci Alfred</a> qui explique pourquoi l'école telle que nous la voyons est dépassée et qu'il faut repenser l'éducation. Cela permettra de te mettre en jambe sur notre volonté de changer l'éducation.</p>
+
+
+<h2>1. Le système de notation est dépassé. Vous êtes là pour apprendre et non pas pour gruger des notes</h2>
+
+<p>Avant toute chose, sachez que The Hacking Project est une formation qui se veut difficile afin de pouvoir vous pousser dans vos retranchements. Il est tout à fait normal que sous la pression vous oubliez cette maxime digne de votre professeur à la fac ("vous êtes ici pour vous et non pas pour nous") et que vous vous dites que ce n'est pas grave de prendre le répo d'une autre personne. Laisse-moi te convaincre que ce n'est pas une bonne idée.</p>
+
+<p>La première raison est la plus évidente : tu es venu à The Hacking Project pour apprendre à coder. Obtenir un diplôme ou une certification de paillette ne servira pas à grand chose devant ton test technique (si tu vises la reconversion) ou lorsque tu voudras faire une page web rapide pour lancer ta boite.</p>
+
+<p>Cela peut faire mal à la tête, mais il est extrêmement important que tu joues le jeu des projets et que tu les fasses sans tout pomper. Il peut être intéressant de récupérer une certaine ligne pour te débloquer (notamment en Rails avec sa syntaxe qui ne pardonne pas), mais pomper des larges parties de l'exercice ne sert à rien. Tu vas perdre la partie apprentissage de la formation qui est la raison principale pour laquelle tu es venu à The Hacking Project.</p>
+
+<p>Essayer de tout gratter sans réfléchir est la solution de facilité, mais ne tiendra pas le long court. Déjà, tu te crames auprès de la communauté (les bruits de couloir vont vite), donc tu risques de te retrouver seul au moment de constituer les équipes de projets finaux. Ensuite cette méthode ne marchera pas lors des projets finaux puisque tu vas devoir faire une application de A à Z. Si tu zappes M, tu te retrouveras bloqué pour le projet final. Donc si tu ne te fais pas violence maintenant, tu exploseras en plein vol dans quelques semaines, et ce sera bien plus douloureux que les quelques remue-méninges que tu aurais pu faire pendant la formation.</p>
+
+<p>Notre conseil : tu es là pour apprendre, et la meilleure façon d'apprendre est de faire sérieusement les projets. Tout recopier sur une autre personne est déjà un manque de respect, mais aussi une contradiction avec ce pourquoi tu es venu à THP.</p>
+
+
+<p>C'est tout à fait normal de ne pas réussir à faire entièrement un projet. Les projets sont très longs afin de vous permettre de vous dépasser et de proposer à ceux qui veulent faire des nocturnes de quoi s'amuser. Les corrections vous permettent de discuter avec la personne en face et de voir comment vous pourriez améliorer le programme. Ce n'est pas un moment de notations (nous n'avons pas de notes à THP), mais un moment d'échange. Arriver avec un programme qui marche mais que vous ne comprenez pas a beaucoup moins d'intérêt qu'arriver avec un programme qui ne marche pas mais dont vous connaissez les lignes par coeur et avec lequel vous pouvez discuter longuement.</p>
+
+<p>Notre conseil : prenez les corrections comme un moment d'échange où vous allez discuter sur votre code véritable et non pas un truc "qui marche mais que vous ne comprenez pas". Vous perdez tout l'intérêt des corrections en faisant cela.</p>
+
+
+<h2>2. Les corrigés appartiennent à l'école traditionnelle et n'ont pas leur place ici</h2>
+
+<p>Bien souvent, les moussaillons me demandent des corrigés d'exercice afin de savoir "comment un pro aurait fait". Il est vrai qu'avec l'école traditionnelle et le "maître" qui donne les cours et qui incarne la voix de la raison c'est tout à fait normal de penser corrigés. Cependant, le format corrigé n'est pas adapté au monde moderne et encore moins à une école sans professeur. Laissez-moi vous expliquer pourquoi il faut se sortir de la tête la notion de corrigés.</p>
+
+<p>En premier lieu, la notion de corrigé impliquerait que la solution parfaite existe pour chaque problème. C'est une conception très scolaire qui ne s'applique pas dans la vraie vie. En effet, si chaque problème sur terre avait une solution claire et définie qu'il suffirait d'appliquer pour le résoudre, la vie serait beaucoup simple, la paix dans monde existerait, et les petits enfants ne mourraient pas de faim. Ce n'est pas le cas : chaque problème a plein de solutions différentes (comment tu peux le voir dans les corrections de pair). Il n'y a pas de bon ou de mauvais choix, il n'y a que des choix qui impliquent des conséquences. Par exemple : si je décidais d'appliquer une sélection à la formation, le niveau global serait meilleur, mais je perdrais l'aspect universel de The Hacking Project. L'objectif est de voir pour toi quelles conséquences tu préfères à d'autres.</p>
+
+<p>Ainsi il faut voir la résolution d'un problème comme l'application d'une philosophie qui t'est propre. Pour cette boucle, préférerais-tu l'utilisation d'une boucle while ou d'une boucle for ? Le plus important est qu'il te faut comprendre les implications de tes choix et ne pas hésiter à chercher pourquoi et comment. Les corrections de pairs permettent de mettre en valeur les différences entre vos travaux et tu n'auras qu'à personnaliser le code en fonction de ce que tu auras vu. Au début, tu prendras des solutions qui te semblent plus lisibles et compréhensibles. Puis avec le temps tu optimiseras les solutions avec ton expérience : code plus court, code plus transmissible, code plus optimisé ou autre. D'ailleurs ce qui est amusant c'est de revenir sur tes premiers projets dans deux mois, puis de voir comment tu les optimiserais. Si nous te donnons une solution que l'on aurait faite, tu te suffirais à cette solution, tu ne te seras pas approprié TA solution au problème, et tu partirais sur une certaine philosophie qui ne t'appartiendrait pas. Tu penserais que "c'est bon le problème est résolu puisque la solution est forcément celle du professeur". Pas vraiment, puisque ce serait une des solutions qui serait orientée vers une philosophie de code qui n'est peut être pas la tienne. Ce n'est pas ce que nous voulons. Nous voulons t'inculquer le fait que la solution t'appartient, et tu es libre d'orienter le code dans la direction que tu veux. Veux-tu l'optimiser en mémoire ? Veux-tu l'optimiser en vitesse ? Veux-tu le rendre lisible ? Si c'est le cas, comment définis-tu lisible ? Bref, il faut voir du code comme un organisme vivant qui s'optimise avec le temps. Au tout début ton code sera un peu brouillon, puis tu commenceras à l'orienter vers une direction, puis tu affineras cette direction, et ainsi de suite.</p>
+
+<p>Un autre argument est le fait qu'en entreprise tu n'auras pas de corrigé. En effet, ce que l'on te demandera n'aura pas été fait, ne sera pas fait par quelqu'un d'autre (sinon pourquoi on te paie ?!), et tu seras livré à toi-même dans la résolution d'un problème. Les seuls soutiens extérieurs seront : demander à une autre personne un conseil si tu es vraiment bloqué et faire une relecture du code en fin de problème pour voir si ce dernier répond bien au critères définis au début de ta tâche, pour ainsi voir comment tu pourrais l'améliorer avec les conseils. Cela est exactement comment nous t'enseignons le code pendant ces semaines à The Hacking Project et c'est l'une des raisons majeures pour laquelle nous croyons que le format actuel de l'école ne prépare pas au monde de demain.</p>
+
+<p>Enfin, ne pas donner de corrigé t'apprend une qualité qui est indispensable de nos jours : l'humilité. Comme nous ne donnons pas de corrigés officiels, le ressenti que tu as de ton code est "je sais que mon code marche, je sais qu'il n'est pas ouf mais j'ai plein de marge de manœuvre pour l'optimiser quand j'aurai un meilleur niveau". Si nous t'avions donné un corrigé, ton ressenti serait : "ce code est LE bon, pas besoin de faire mieux, c'est cool, problème terminé, bisous". Cela te donnerait une certaine arrogance en entretien d'embauche : "mais on m'a dit qu'il fallait faire ça à l'école, donc c'est forcément comme ça qu'il faut faire !". Non, tout dépend de l'orientation que tu veux donner à ton code. Chaque problème a plusieurs solutions et il faut une solution qui t'appartient et qui répondra mieux aux objectifs du problème.</p>
+
+<p>Afin de finir, j'aimerais citer Nicolas Sadirac, sulfureux premier directeur de l'école 42 et président du bocal d'EPITA, deux des écoles les plus prestigieuses en code en France. Il faut rappeler qu'à 42 comme à EPITA, les corrigés n'existent absolument pas et leur pédagogie une des principales raisons du prestige de ces écoles. Voici donc une phrase de Nicolas Sadirac qu'il aimait dire lors de sa matinée d'introduction à 42 :</p>
+<blockquote class="blockquote pl-1 border-left-primary border-left-3">
+  <p class="mb-0">"Au fait, il y a un projet à 42, si vous y arrivez, pensez à breveter votre solution car c'est un problème qui n'a jamais été résolu et vous risquez de gagner un prix Nobel."</p>
+  <footer class="blockquote-footer">Nicolas Sadirac</footer>
+</blockquote>
+
+<p>Voici l'état d'esprit qui est enseigné dans deux des écoles de code les plus réputées au monde.</p>
+
+<div class="card box-shadow-0 border-info">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h4>
+      <p>Jamy, je n'ai rien compris au problème, je veux un corrigé pour voir la solution car je n'y suis pas arrivé.</p>
+		<p>Excellente remarque, et idem, ce n'est pas une bonne idée car en entreprise cette stratégie ne marche pas. Imagine tu viens de signer un contrat en freelance avec un client. L'option "désolé je n'y suis pas arrivé" n'existe pas, à moins que tu ne veuilles pas gagner d'argent. Donc il faut impérativement te sortir de la tête que demain il existe des solutions à tous tes problèmes et tout ira mieux. Dans la vraie vie cette méthode ne marche pas et tu vas te prendre une douche froide si tu penses que les gens vont te donner la solution sur un plateau d'argent.</p>
+
+		<p>Il arrive de faire l'impasse sur un problème précis (personnellement, je fais "pouce !" quand on me demande de faire du réseau), et le système de jokers est là pour ça. Mais faire trop d'impasses implique que te lancer de manière professionnelle dans ce milieu sera difficilement à ta portée.
+	</p>
+    </div>
+  </div>
+</div>
+
+ 
+<h2>Ce que vous avez acheté à The Hacking Project : un cadre, une communauté</h2>
+<p>Il m'arrive que l'on me fasse des remarques du genre : "ouais je ne kiffe pas le format des cours de THP, donc je préfère suivre ceux de Grafikart / OpenClassrooms / lire la documentation officielle", et certaines personnes sont déçues par THP. Et bien laissez-moi vous dire que c'est génial et que vous avez parfaitement compris la philosophie de l'école de la vie.</p>
+
+<p>En effet, dans la vraie vie, vous serez la plupart du temps amenés à devoir apprendre en continu, trouver les bonnes ressources, apprendre rapidement un concept pour l'appliquer pour un projet, lire plusieurs informations pour vous faire votre propre idée. Cette compétence est indispensable au XXIème siècle et nous sommes très contents que vous alliez chercher d'autres informations en plus du cours pour approfondir et vous faire un second avis sur le cours. Donc bravo à vous et continuez dans cette philosophie !</p>
+
+<p>Pour rappel, voici ce que nous avons vendu à The Hacking Project :</p>
+
+<p>En premier lieu la curation d'un parcours précis. Avec la quantité de cours en ligne, il est facile d'apprendre les bases de l'informatique. Cependant, quand il s'agit de construire un parcours qui vise à donner les clés de la boîte à outils de l'informatique tout en donnant les bases du développement web, c'est plus compliqué et il est dur de faire son choix. Il existe des cours Udemy, mais pas mal sont juste des tutos pas à pas et manquent de projets progressifs. Il existe aussi l'école 42, mais tu vas manger un an de C avant de toucher au web (via PHP qui plus est). Ou encore certains bootcamps en ligne comme freecodecamp ou The Odin Project, mais le premier te tient trop par la main et le dernier explique assez mal Rails. Ainsi, nous savons déjà coder et nous pensons que ces 500 heures de cours te donneront les bases en informatique pour que tu puisses connaître cet univers et que tu puisses approfondir comme tu le sens à sa fin.</p>
+
+<p>En deuxième lieu, nous te donnons un cadre motivant. Le système de groupe, de projets validants n'est pas là pour te sanctionner, mais là pour te motiver à tenir. The Hacking Project est intense, et faire les 500 heures de cours tout seul sans aucun cadre n'est pas à la portée de tout le monde. Il existera toujours des autodidactes solitaires qui arriveront à apprendre le code en empruntant un bouquin à la bibliothèque et qui penseront que THP c'est nul et qu'ils auraient pu le faire seul, mais ce sont en général des exceptions. Le cadre de The Hacking Project te donnera la force de tenir les parties intenses de la formation et c'est l'une des grandes valeurs ajoutées de THP.</p>
+
+<p>Enfin, le troisième point est la communauté avec laquelle vous pouvez interagir, jouer, aider. C'est la force de la formation. Entre le moment où tu intègres THP jusqu’à ce que tu obtiennes ton certificat de corsaire, tu vas rencontrer tes “collègues” et camarades, créer des affinités et découvrir les forces et faiblesses de chacun. Ces personnes vont constituer les premières briques de ton nouveau réseau de connaissances professionnelles, celles sur lesquelles tu vas pouvoir t’appuyer quand un client te demandera de faire quelque chose qui sort “légèrement” de tes compétences ou quand tu seras débordé et qu’un ancien client t'appellerai pour te dire que son site ne répond plus…. En plus, il faut être clair: tu galères sur des problèmes de code aujourd’hui, mais ça va continuer pendant un bout de temps, c’est juste que ce sera sur des problèmes plus complexes; mais du coup, si tu entretiens un bon réseau, tu vas être très content de pouvoir poser des questions à celles qui aiment bien faire du front et qui comprends donc un peu mieux que toi les composants React, ou même celui a fait un peu plus de bases de données pendant THP et qui comprends donc le concept d’inner join ;) Ces personnes auront fait le même cursus et seront passé par les mêmes galères que toi donc l’échange sera forcément plus facile et efficace. Mais ce seront aussi ces personnes qui t’enverrons des recommandations ou même des missions quand elles seront débordées ! Le monde du développement est encore petit et tu seras étonné de voir à quel point on se recroise souvent tout au long de nos carrières !</p>
+
+<h2>Conclusion</h2>
+<p>Pour conclure cette ressource sur notre philosophie, j'aimerais la résumer: En gros, tu apprends, mais sans locaux sans professeur. Et c'est pour cela que c'est l'école du futur. Tu es acteur de ta formation et tu apprendras ce que tu voudras y apprendre. On n'ira pas te fliquer et tu fais de la formation ce que tu veux en tirer.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #5E66E5 ">
+          <h1>Cours : Le testing</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/lessons/13/lesson_submissions/new?locale=fr">
+                  <i class="ft-edit" data-toggle="tooltip" data-placement="top" data-original-title="Proposer une amélioration"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            
+<h2>1. Introduction</h2>
+<p>Le test en programmation, c'est toute une histoire. Le testing est un des gros points forts de Ruby, et bien tester son code est un standard de toute application moderne qui se respecte. Mais qu'est-ce que le testing, à quoi ça sert, et pourquoi en faire&nbsp;? C'est ce que nous allons voir dans cette ressource.</p>
+
+<p>Avant de raconter la life du testing, sache que c'est tout simplement une façon de vérifier que ton programme marche bien. Tu pratiques le testing tous les jours en ce moment, par exemple en lançant <code>pyramid.rb</code> et en rentrant des inputs pour voir si ton programme marche bien&nbsp;; ou bien en ouvrant le fichier <code>index.html</code> et en vérifiant que ce foutu div est bien centré. Évidemment, tu te doutes bien que les développeurs pros ne vont pas lancer chaque matin chaque programme à la main pour voir s'il marche toujours…il existe des façons d'automatiser cela, et c'est ce que nous allons voir ici.</p>
+
+<h2>2. Historique</h2>
+<p>Cette ressource peut être très fournie, car l'univers du test est très grand. Afin de ne pas te perdre avec du blabla d'ingénieur en informatique, nous irons droit au but, et te conseillerons quelques lectures si tu veux aller plus loin.</p>
+
+<p>Le test en programmation existe depuis la nuit des temps. Son automatisation date du début des années 80, et toute entreprise qui se respecte teste régulièrement tout son code de manière automatique.</p>
+
+
+<h2>3. La ressource</h2>
+
+<h3>3.1. Testing&nbsp;? What&nbsp;? Why&nbsp;? </h3>
+<p>Prenons le cas d'un programme qui demande à l'utilisateur combien d'étages sa pyramide va faire avant de lui en renvoyer de la taille correspondante (au hasard hein…). Pour le moment, pour tester ce programme, tu rentrais à la main dans ton terminal <code>$ ruby pyramid.rb</code>, puis tu testais quelques chiffres, avant de vérifier visuellement que le programme te renvoie la bonne pyramide.</p>
+
+<p>Imagine qu'il soit possible d'écrire un programme qui automatise ça pour le refaire chaque matin. Par exemple ce programme testerait des inputs comme <code>3</code>, <code>10</code>, <code>0</code>, <code>-5</code>, <code>10932082</code> ou même le string <code>chiffre</code>. Et à chaque input, il serait capable de savoir que "si tu rentres <code>5</code>, mon programme <code>pyramid.rb</code> va te renvoyer une pyramide à 5 étages", ou encore "si tu rentres <code>10932082</code>, mon programme <code>pyramid.rb</code> devrait te répondre qu'il n'accepte que les nombres entre 1 et 25". Franchement ce serait cool, non&nbsp;? Et bien le test automatique c'est ça&nbsp;!</p>
+
+<p><b>"Mais purée pourquoi je voudrais tester un truc pareil tous les matins&nbsp;?"</b> Ho du calme jeune moussaillon&nbsp;! Imagine que ton programme <code>pyramid.rb</code> soit un service payant accessible par des milliers de clients H-24, qu'il fasse 3000 lignes de code et qu'il soit maintenu par une équipe de 20 développeurs et développeuses. Il est hors de question qu'il ne fonctionne pas, même dimanche à 3&nbsp;h du matin (sinon ta start-up perd des clients) alors même qu'avec 20 personnes qui le mettent à jour régulièrement, il a de grandes chances de planter souvent. <b>La solution&nbsp;? Tester automatiquement le bon fonctionnement du programme à chaque modification&nbsp;!</b> </p>
+<p>Un cas plus concret&nbsp;: prenons la plateforme de The Hacking Project. C’est tout bête, mais un utilisateur ne devrait pas pouvoir se connecter s'il rentre un mauvais mot de passe. Tu dois bien t'imaginer que nous ne testons pas à la main cette fonctionnalité à chaque fois que l'on propose une mise à jour. Pourtant, une mise à jour c'est une personne qui a changé des lignes de code dans un programme qu'il ne peut humainement pas connaître en entier&nbsp;: ce sagouin a toutes les chances d'y avoir introduit un bug. THP a donc mis en place un système qui teste les différentes fonctionnalités et pages de l'application. Ainsi si l'un d'entre nous change un paramètre qui fait planter l'autre bout de l'application, les tests diront "hé mais ce bout de l'application plante", ce qui nous évite d'imposer un bug à nos chers moussaillons.</p>
+<p>Au final <b>si tu n'écris pas de test automatisé pour ton programme, ce sont tes clients qui le testeront pour toi.</b> Et tu le sais bien, un client qui trouve un bug est rarement un client satisfait…</p>
+
+<p>Le testing, qui était au départ une bonne pratique, s'est maintenant imposé comme un standard des applications modernes. La communauté Ruby insiste beaucoup pour que ses membres mettent en place une jolie stack de tests. C'est d'ailleurs une des forces du langage.</p>
+
+<div class="card box-shadow-0 border-success">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">📚 INSTANT CULTURE GÉ</h4>
+      <p class="card-text">Il existe un type de programmation qui s'appelle le Test Driven Development (TDD). C'est presque une philosophie orientée produit puisqu'elle consiste à écrire les tests AVANT de coder ton application.</p>
+      <p>La démarche peut paraître contre-intuitive, mais elle a ses forces. En effet, en commençant par écrire ses tests, le dev doit se poser clairement la question "qu'est-ce que mon programme doit faire exactement&nbsp;?". Les tests deviennent alors une sorte de cahier des charges en mode "s'il a ceci en entrée, mon programme doit produire cela. S'il a ça, il va réagir comme ceci. Etc." Et une fois lancé dans la phase de programmation, on ne perd plus de vue son objectif initial&nbsp;! C'est un problème courant quand on code&nbsp;: on digresse, on traite des cas particuliers, on se focalise sur des détails et au final, on s'écarte de ce qu'on devait produire. </p>
+      <p>Toutefois, cette approche un peu fastidieuse pour le moment pour un moussaillon de THP 😛</p>
+    </div>
+  </div>
+</div>
+
+
+<h3>3.2. Le test, en Ruby</h3>
+<p>Dans cette ressource, je vais te montrer comment tester automatiquement un programme simple qui dit "Bonjour Monde".</p>
+
+<h4>3.2.1. La gem Rspec</h4>
+<p>Pour faire du test automatique en Ruby, nous allons créer un programme-testeur qui fait tourner notre programme-testé, et qui check si les méthodes renvoient bien le résultat souhaité. Pour tester, la communauté Ruby propose deux solutions :</p>
+
+<ul>
+  <li><code>Minitest</code>, qui est directement installé dans Ruby</li>
+  <li><code>Rspec</code>, qui est une gem très populaire</li>
+</ul>
+
+<p>Pour choisir quoi utiliser pour les tests automatiques, il y a deux écoles. Certains vont préférer Minitest, d'autres vont préférer Rspec. Tu pourrais t'en amuser et faire une conférence lors du prochain <a href="https://rubyparis.org/" target="_blank">Paris.rb</a> intitulée "pourquoi [tel outil] est nul et [l'autre outil] est meilleur" et créer la zizanie. Bref, pour The Hacking Project, nous allons te demander de passer par un seul outil&nbsp;: Rspec. <br> <b>Pourquoi Rspec&nbsp;?</b> Et bien c'est une gem très populaire dans rails. Si un jour tu voudras tester automatiquement des fonctionnalités comme une authentification sur ton application rails, ce sera plus simple (surtout quand on débute) avec Rspec qu'avec Minitest. Donc si jamais un employeur t'interroge vigoureusement sur le pourquoi de Rspec, réponds-lui simplement que c'était notre choix et non pas le tiens.</p>
+
+<p>On va donc commencer par installer la <a href="https://github.com/rspec/rspec" target="_blank">gem Rspec</a>. Une gem c'est une extension de Ruby où des gens ont fait du code open-source sur lequel on va s'appuyer pour se mâcher le travail. Il existe plein de gems, par exemple celle <a href="https://github.com/pdfkit/pdfkit" target="_blank"> qui transforme un fichier HTML / CSS en PDF</a>, ou encore celle <a href="https://github.com/fazibear/colorize" target="_blank">qui ajoute des jolies couleurs de terminal à tes programmes</a>. Pour l'installer, rien de plus simple sur ton terminal :</p>
+
+<pre class=" language-shell"><code class=" language-shell">$ gem install rspec</code></pre>
+
+<p>Et hop, ta version de Ruby utilise bien Rspec. C'est merveilleux.</p>
+
+<h4>3.2.2. Un dossier Ruby bien testé</h4>
+<p>Maintenant que tu as Rspec d'installé, il nous reste à tout préparer pour bien ranger nos tests au sein de notre dossier-projet. Nous allons créer un dossier <code>spec</code> pour héberger les programmes de tests, mettre en place le minimum syndical pour faire marcher la gem, puis rajouter notre application dans <code>lib</code>. Notre dossier ressemblera à ceci :</p>
+
+<pre class=" language-shell"><code class=" language-shell">my_super_test_project
+├── lib
+│   ├── ton_premier_programme.rb
+│   └── ton_deuxième_programme.rb
+├── spec
+│   ├── spec_helper.rb (un fichier de configuration de rspec)
+│   └── ton_premier_programme_spec.rb
+└── .rspec</code></pre>
+
+
+<p>Tu as bien compris que pour tester de manière automatique tes programmes, il te faut d'autres programmes (logique, non&nbsp;?). En gros, tu vas faire un programme <code>pyramid_spec.rb</code> qui testera ton programme <code>pyramid.rb</code>. Nous pourrions tout mettre dans un même dossier, mais le bordel c'est nul&nbsp;: on finit toujours par le regretter. La convention c'est donc&nbsp;: </p>
+<ul>
+  <li>Tes programmes "applicatifs" dans un dossier <code>lib</code>,</li>
+  <li>Tes programmes "testeurs" dans un dossier <code>spec</code>.</li>
+</ul>
+
+<div class="card box-shadow-0 border-danger">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+      <p class="card-text">Quand tu utilises rspec, tous tes fichiers de test devront finir par <code>_spec.rb</code>. C'est une convention.</p>
+    </div>
+  </div>
+</div>
+
+<p>Faisons-le pas à pas. Créé donc un dossier <code>my_super_test_project</code> dans lequel tu vas te mettre. Rentre la ligne suivante :</p>
+
+<pre class=" language-shell"><code class=" language-shell">$ rspec --init</code></pre>
+
+<p>Cette ligne a pour effet d'installer Rspec dans ton dossier. Elle va créer un dossier qui s'appelle <code>spec</code>, un fichier dans ce dossier qui s'appelle <code>spec_helper.rb</code>, puis un fichier qui s'appelle <code>.rspec</code>. Rien de bien croustillant pour le moment (ce sont des fichiers de configuration), mais c'est un bon début.</p>
+
+<p>Maintenant crée un fichier <code>hello.rb</code> dans un dossier <code>lib</code>, et rajoute-lui une méthode qui affiche "Hello world&nbsp;!". Comme ceci :</p>
+<pre class=" language-ruby"><code class=" language-ruby"><span class="token keyword">def</span> hello
+  <span class="token keyword">return</span> <span class="token string">"Hello world!"</span>
+<span class="token keyword">end</span></code></pre>
+
+<p>Tu as fait ton programme, c'est génial. Maintenant nous allons le tester. Crée dans le dossier <code>spec</code> un fichier <code>hello_spec.rb</code> qui contient les lignes suivantes :</p>
+
+<pre class=" language-ruby"><code class=" language-ruby">require_relative <span class="token string">'../lib/hello'</span>
+
+describe <span class="token string">"the hello function"</span> <span class="token keyword">do</span>
+  it <span class="token string">"says hello"</span> <span class="token keyword">do</span>
+    expect<span class="token punctuation">(</span>hello<span class="token punctuation">)</span><span class="token punctuation">.</span>to eq<span class="token punctuation">(</span><span class="token string">"Hello world!"</span><span class="token punctuation">)</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span></code></pre>
+
+<p>Décortiquons ce mini programme&nbsp;: </p>
+<ul>
+  <li><code>require_relative '../lib/hello'</code> dit juste à notre programme "hey, je vais vouloir accéder au contenu du fichier <code>hello.rb</code> qui est dans le dossier <code>lib</code> qui se trouve dans le dossier parent (d'où le <code>../</code>) de là où tu es".</li>
+  <li><code>describe "the hello function" do (...) end</code> permet d'ouvrir un premier groupe de tests que l'on a appelé "the hello function". Comme son nom l'indique, ce groupe de tests automatiques va se focaliser sur ce que doit faire la fonction "hello".</li>
+  <li><code>it "says hello" do (...) end</code> permet d'ouvrir un premier test au sein du groupe de test "the hello function". Nous avons intitulé ce test "says hello" car c'est précisément ce comportement qu'on va tester sur la fonction hello.</li>
+  <li><code>expect(hello).to eq("Hello world!")</code> est le cœur même du test&nbsp;! On a indiqué via <code>expect(..)</code> qu'on va exécuter la fonction <code>hello</code>. Puis le <code>.to eq(..)</code> permet de spécifier le résultat attendu&nbsp;: un string "Hello world!" </li>
+</ul>
+<p>TADAAAAM&nbsp;! Tu viens d'écrire ton premier programme de test automatisé en Ruby via Rspec (note cette phrase pour la balancer ce soir à tes potes ébahis).</p>
+
+
+<h4>3.2.3. Faire ses tests</h4>
+<p>Pour tester ton application, tu as juste à faire (en étant à la racine de ton dossier-projet) :</p>
+<pre class=" language-shell"><code class=" language-shell">$ rspec</code></pre>
+
+<p>Si tout va bien, tu devrais avoir des lignes qui te confirment que ton programme a testé une chose et qu'il n'y a pas d'erreur. C'est merveilleux.</p>
+
+<div class="card box-shadow-0 border-danger">
+  <div class="card-content collapse show">
+    <div class="card-body">
+      <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+      <p class="card-text">Rspec ne marche pas si jamais tu as un espace dans un nom de fichier ou dans un nom de dossier parent. Ça te renverra une erreur qui fait très peur. Par exemple voici le working directory (<code>$ pwd</code>) d'un chemin qui ferait planter Rspec :</p>
+      <pre class=" language-shell"><code class=" language-shell">home/first_name/The Hacking Project/Semaine 2/Lundi/my_super_test_project</code></pre>
+      <p>Si tu as ça, remplace les espaces dans les noms de dossier par des <code>_</code> et tout ira bien. En gros :</p>
+      <pre class=" language-shell"><code class=" language-shell"># BAD:
+/Documents/My Homework/ruby
+
+# GOOD:
+/Documents/my_homework/ruby</code></pre>
+    </div>
+  </div>
+</div>
+
+
+
+<h2>4. Points importants à retenir</h2>
+<p>Tester son code c'est très important pour qu'il fonctionne à moyen terme. Pour tester en Ruby, les deux outils les plus importants sont Minitest et Rspec&nbsp;; pour THP nous allons prendre Rspec.</p>
+
+<p>Rspec est une gem qu'il faut installer, puis nous pouvons la brancher dans un dossier Ruby en faisant <code>$ rspec --init</code>. Les fichiers de test se trouvent dans un dossier <code>spec</code> et ont un nom qui finit par <code>_spec.rb</code>.</p>
+<p> Les lignes de base d'un programme de test en Rspec sont :</p>
+<ul>
+  <li><code>require_relative '***'</code> pour faire appel au programme testé (sinon ses méthodes ne sont pas accessibles par le programme de test</li>
+  <li><code>describe "***" do (...) end</code> pour introduire un groupe de test, généralement axé sur une méthode donnée</li>
+  <li><code>it "***" do (...) end</code> pour introduire un test précis au sein de ce groupe, généralement axé sur une fonctionnalité donnée</li>
+  <li><code>expect(lmethode_ou_variable_ou_autre).to eq(resultat_attendu) </code> pour faire le test qu'une méthode ou variable ou autre donne le résultat attendu</li>
+
+</ul>
+
+
+<h2>5. Pour aller plus loin</h2>
+<p>On aime bien <a href="https://www.thebalancecareers.com/all-you-need-to-know-about-software-testing-methods-4019921" target="_blank">l'article</a> de TheBalanceCareers qui vulgarise assez bien les types de tests.</p>
+
+<p>Aussi, tu peux aller sur <a href="http://rspec.info/" target="_blank">le site</a> de la gem Rspec. Ou tu peux aller jeter un œil sur <a href="https://github.com/rspec/rspec" target="_blank">le repo GitHub</a> de la gem. Mais ne t'attarde pas trop non plus dessus, car nous avons prévu plein d'exercices pour que tu puisses comprendre Rspec en mode #au_top.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="border-top: 3px solid #FF4081 ">
+          <h1>Projet : Des exercices, des tests</h1>
+          <a class="heading-elements-toggle">
+          <i class="la la-ellipsis-v font-medium-3"></i>
+          </a>
+          <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a href="https://www.thehackingproject.org/dashboard/courses/1/projects/6/project_submissions/new?locale=fr">
+                  <i class="ft-edit"></i>
+                  </a></li>
+              <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+              <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <div class="tab-pane active" id="home1" role="tabpanel">
+            <h2>2. Le projet</h2>
+<p>Ce projet vise plutôt à vous faire découvrir Rspec que de vous challenger sur des exercices Ruby. Les exercices sembleront abstraits (surtout au début), mais c'est une bonne intro à Ruby avant de plonger dans l'univers des bots ;)<br>
+Ce projet vous permettra à la fois de faire des programmes simples en codant des méthodes, puis de vous donner un aperçu sur les tests. Pour cet exercice, les tests seront déjà rédigés et vous donneront un cadre de travail pour coder le programme correspondant. Vous y parviendrez par itération. </p>
+
+<p>Voici comment ça marche&nbsp;: nous vous donnons un grand repo Github, dans lequel il y a plein de programmes de test qui disent "<i>la méthode bonjour devrait dire bonjour</i>". Sauf que la méthode bonjour ne dit pas bonjour, et les résultats des tests vont dire "<i>la méthode bonjour devrait dire bonjour mais <a href="https://www.youtube.com/watch?v=x-VYdBKwSLc" target="_blank">elle ne dit pas bonjour</a>, le test n'a pas réussi&nbsp;: il rate</i>". Avant de faire comme Vald et d'impliquer les mamans de tout le monde dans cette affaire, votre mission est de faire que le programme de test la boucle un peu. Pour cela, modifiez le programme testé, faites lui dire bonjour et les tests devraient passer&nbsp;!</p>
+
+<p>Mettre en place le projet peut faire un peu peur, mais c'est assez simple ne vous en faites pas&nbsp;: c'est une excellente opportunité pour vous apprendre à lire des docs et manipuler des dossiers Ruby. Ce sera une journée remplie d'erreurs, mais une occasion parfaite pour vous apprendre <b>à lire les erreurs du terminal, à essayer de les comprendre</b>, et ainsi à mieux rebondir.</p>
+
+<p>Sans plus tarder, <a href="https://github.com/felhix/tests-ruby" target="_blank">voici le répository GitHub</a> qui contient les exercices à faire aujourd'hui. Bonne chance&nbsp;!</p>
+
+<h2>3. Rendu attendu</h2>
+<p>Un joli fork du repository GitHub concerné, avec les tests qui marchent ! Un fork est une copie d'un repo effectuée via GitHub&nbsp;: pour forker, cliquez sur le bouton "Fork" en haut à droite du repo.</p>
+<p>Bien évidemment, essayez de coder des <u>vrais</u> programmes qui pourraient accepter n'importe quelle donnée en entrée. Les petits malins qui ne gèrent que les 2 cas de test, juste pour les faire réussir, ne vont pas apprendre grand-chose. Volkswagen a essayé, ils ont eu des problèmes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+      </div>
+    </div>
+
+    <div class="thp-flashes"></div>
+
+
+
+    <script src="./Lundi_files/dashboard-23e9266bc16687c1cc4d.js.téléchargement"></script>
+    <script charset="utf-8">
+      $('input[name=authenticity_token]').val($('meta[name=csrf-token]').attr('content'));
+    </script>
+
+  
+
+<div class="tooltip fade bs-tooltip-top" role="tooltip" id="tooltip554453" x-placement="top" style="position: absolute; transform: translate3d(1058px, 375px, 0px); top: 0px; left: 0px; will-change: transform;"><div class="arrow" style="left: 33px;"></div><div class="tooltip-inner">Bot Twitter</div></div></body></html>
